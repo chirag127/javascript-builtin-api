@@ -1,0 +1,11 @@
+{
+  "byId": {
+    "javascript-builtin": {
+      "id": "javascript-builtin",
+      "name": "JavaScript Built-ins",
+      "status": "scaffold",
+      "source": "MDN / ECMA-262"
+    }
+  },
+  "searchableFields": []
+}
