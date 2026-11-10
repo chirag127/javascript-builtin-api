@@ -1,0 +1,58 @@
+{
+  "id": "Intl.Locale",
+  "name": "Intl.Locale",
+  "kind": "class",
+  "description": "The Intl.Locale object is a standard built-in property of the Intl object that represents a Unicode locale identifier.",
+  "status": "standard",
+  "memberCount": 22,
+  "members": [
+    "Locale",
+    "baseName",
+    "calendar",
+    "caseFirst",
+    "collation",
+    "getCalendars",
+    "getCollations",
+    "getHourCycles",
+    "getNumberingSystems",
+    "getTextInfo",
+    "getTimeZones",
+    "getWeekInfo",
+    "hourCycle",
+    "language",
+    "maximize",
+    "minimize",
+    "numberingSystem",
+    "numeric",
+    "region",
+    "script",
+    "toString",
+    "variants"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma402/#locale-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale",
+  "support": {
+    "chrome": {
+      "added": "74",
+      "removed": null
+    },
+    "firefox": {
+      "added": "75",
+      "removed": null
+    },
+    "safari": {
+      "added": "14",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "12.0.0",
+      "removed": null
+    }
+  }
+}

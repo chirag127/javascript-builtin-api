@@ -1,0 +1,41 @@
+{
+  "id": "Intl.ListFormat",
+  "name": "Intl.ListFormat",
+  "kind": "class",
+  "description": "The Intl.ListFormat object enables language-sensitive list formatting.",
+  "status": "standard",
+  "memberCount": 5,
+  "members": [
+    "ListFormat",
+    "format",
+    "formatToParts",
+    "resolvedOptions",
+    "supportedLocalesOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma402/#listformat-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat",
+  "support": {
+    "chrome": {
+      "added": "72",
+      "removed": null
+    },
+    "firefox": {
+      "added": "78",
+      "removed": null
+    },
+    "safari": {
+      "added": "14.1",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "12.0.0",
+      "removed": null
+    }
+  }
+}

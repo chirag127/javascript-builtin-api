@@ -1,0 +1,62 @@
+{
+  "id": "Temporal.Duration",
+  "name": "Temporal.Duration",
+  "kind": "class",
+  "description": "The Temporal.Duration object represents a difference between two time points, which can be used in date/time arithmetic. It is fundamentally represented as a combination of years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, and nanoseconds values.",
+  "status": "standard",
+  "memberCount": 26,
+  "members": [
+    "Duration",
+    "abs",
+    "add",
+    "blank",
+    "compare",
+    "days",
+    "from",
+    "hours",
+    "microseconds",
+    "milliseconds",
+    "minutes",
+    "months",
+    "nanoseconds",
+    "negated",
+    "round",
+    "seconds",
+    "sign",
+    "subtract",
+    "toJSON",
+    "toLocaleString",
+    "toString",
+    "total",
+    "valueOf",
+    "weeks",
+    "with",
+    "years"
+  ],
+  "specUrl": [
+    "https://tc39.es/proposal-temporal/#sec-temporal-duration-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration",
+  "support": {
+    "chrome": {
+      "added": "144",
+      "removed": null
+    },
+    "firefox": {
+      "added": "139",
+      "removed": null
+    },
+    "safari": {
+      "added": "preview",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "26.0.0",
+      "removed": null
+    }
+  }
+}

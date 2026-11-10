@@ -1,0 +1,39 @@
+{
+  "id": "SuppressedError",
+  "name": "SuppressedError",
+  "kind": "class",
+  "description": "The SuppressedError object represents an error generated while handing another error. It is generated during resource disposal using \"Statements/using\", \"using\" or \"Statements/awaitusing\", \"await using\".",
+  "status": "standard",
+  "memberCount": 3,
+  "members": [
+    "SuppressedError",
+    "error",
+    "suppressed"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-suppressederror-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SuppressedError",
+  "support": {
+    "chrome": {
+      "added": "134",
+      "removed": null
+    },
+    "firefox": {
+      "added": "141",
+      "removed": null
+    },
+    "safari": {
+      "added": "preview",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "24.0.0",
+      "removed": null
+    }
+  }
+}

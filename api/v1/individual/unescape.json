@@ -1,0 +1,35 @@
+{
+  "id": "unescape",
+  "name": "unescape",
+  "kind": "function",
+  "description": "> [!NOTE] > unescape() is a non-standard function implemented by browsers and was only standardized for cross-engine compatibility. It is not required to be implemented by all JavaScript engines and may not work everywhere. Use \"decodeURIComponent()\" or \"decodeURI()\" if possible.",
+  "status": "deprecated",
+  "memberCount": 0,
+  "members": [],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-unescape-string"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/unescape",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

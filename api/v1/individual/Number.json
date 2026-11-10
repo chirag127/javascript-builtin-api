@@ -1,0 +1,57 @@
+{
+  "id": "Number",
+  "name": "Number",
+  "kind": "class",
+  "description": "Number values represent floating-point numbers like 37 or -9.25.",
+  "status": "standard",
+  "memberCount": 21,
+  "members": [
+    "EPSILON",
+    "MAX_SAFE_INTEGER",
+    "MAX_VALUE",
+    "MIN_SAFE_INTEGER",
+    "MIN_VALUE",
+    "NaN",
+    "NEGATIVE_INFINITY",
+    "Number",
+    "POSITIVE_INFINITY",
+    "isFinite",
+    "isInteger",
+    "isNaN",
+    "isSafeInteger",
+    "parseFloat",
+    "parseInt",
+    "toExponential",
+    "toFixed",
+    "toLocaleString",
+    "toPrecision",
+    "toString",
+    "valueOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

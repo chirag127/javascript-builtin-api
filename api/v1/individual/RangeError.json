@@ -1,0 +1,38 @@
+{
+  "id": "RangeError",
+  "name": "RangeError",
+  "kind": "class",
+  "description": "The RangeError object indicates an error when a value is not in the set or range of allowed values.",
+  "status": "standard",
+  "memberCount": 2,
+  "members": [
+    "RangeError",
+    "serializable_object"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

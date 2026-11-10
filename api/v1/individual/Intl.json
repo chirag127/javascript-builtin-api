@@ -1,0 +1,38 @@
+{
+  "id": "Intl",
+  "name": "Intl",
+  "kind": "namespace",
+  "description": "The Intl namespace object contains several constructors as well as functionality common to the internationalization constructors and other language sensitive functions. Collectively, they comprise the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, date and time formatting, and more.",
+  "status": "standard",
+  "memberCount": 2,
+  "members": [
+    "getCanonicalLocales",
+    "supportedValuesOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma402/#intl-object"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl",
+  "support": {
+    "chrome": {
+      "added": "24",
+      "removed": null
+    },
+    "firefox": {
+      "added": "29",
+      "removed": null
+    },
+    "safari": {
+      "added": "10",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.12.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "encodeURI",
+  "name": "encodeURI",
+  "kind": "function",
+  "description": "The encodeURI() function encodes a \"URI\" by replacing each instance of certain characters by one, two, three, or four escape sequences representing the \"UTF-8\" encoding of the character (will only be four escape sequences for characters composed of two surrogate characters). Compared to \"encodeURIComponent()\", this function encodes fewer characters, preserving those that are part of the URI syntax.",
+  "status": "standard",
+  "memberCount": 0,
+  "members": [],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuri-uri"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeURI",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1.1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

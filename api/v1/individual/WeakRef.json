@@ -1,0 +1,38 @@
+{
+  "id": "WeakRef",
+  "name": "WeakRef",
+  "kind": "class",
+  "description": "A WeakRef object lets you hold a weak reference to another object, without preventing that object from getting garbage-collected.",
+  "status": "standard",
+  "memberCount": 2,
+  "members": [
+    "WeakRef",
+    "deref"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/managing-memory.html#sec-weak-ref-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakRef",
+  "support": {
+    "chrome": {
+      "added": "84",
+      "removed": null
+    },
+    "firefox": {
+      "added": "79",
+      "removed": null
+    },
+    "safari": {
+      "added": "14.1",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "14.6.0",
+      "removed": null
+    }
+  }
+}

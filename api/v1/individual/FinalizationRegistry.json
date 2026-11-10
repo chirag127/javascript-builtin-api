@@ -1,0 +1,39 @@
+{
+  "id": "FinalizationRegistry",
+  "name": "FinalizationRegistry",
+  "kind": "class",
+  "description": "A FinalizationRegistry object lets you request a callback when a value is garbage-collected.",
+  "status": "standard",
+  "memberCount": 3,
+  "members": [
+    "FinalizationRegistry",
+    "register",
+    "unregister"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/managing-memory.html#sec-finalization-registry-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry",
+  "support": {
+    "chrome": {
+      "added": "84",
+      "removed": null
+    },
+    "firefox": {
+      "added": "79",
+      "removed": null
+    },
+    "safari": {
+      "added": "14.1",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "14.6.0",
+      "removed": null
+    }
+  }
+}

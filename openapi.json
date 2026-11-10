@@ -2,30 +2,38 @@
   "openapi": "3.1.0",
   "info": {
     "title": "JavaScript Built-ins",
-    "description": "JavaScript built-in objects, methods, and properties",
+    "description": "Every JavaScript built-in MDN tracks — 94 objects, namespaces and global functions covering 929 members — with a one-paragraph description, its member names, the ECMAScript anchor and first-support versions for Chrome, Firefox, Safari, Edge and Node.js.",
     "version": "1.0.0",
     "license": {
-      "name": "CC0-1.0"
+      "name": "CC0-1.0 (BCD); CC-BY-SA-2.5 (MDN prose)"
+    },
+    "contact": {
+      "name": "Chirag Singhal",
+      "url": "https://github.com/chirag127",
+      "email": "chirag@oriz.in"
     }
   },
   "servers": [
     {
-      "url": "https://chirag127.github.io/javascript-builtin",
+      "url": "https://chirag127.github.io/javascript-builtin-api",
       "description": "GitHub Pages"
     }
   ],
   "paths": {
-    "/data.json": {
+    "/api/v1/data.json": {
       "get": {
-        "summary": "JavaScript Built-ins data",
-        "description": "JavaScript built-in objects, methods, and properties",
+        "summary": "All 94 JavaScript built-ins",
+        "operationId": "listData",
         "responses": {
           "200": {
-            "description": "JSON response",
+            "description": "JSON array of 94 records",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array"
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/JsBuiltin"
+                  }
                 }
               }
             }
@@ -33,22 +41,369 @@
         }
       }
     },
-    "/data/builtins": {
+    "/api/v1/individual/{id}.json": {
       "get": {
-        "summary": "JavaScript Built-ins",
-        "description": "JavaScript built-in objects, methods, and properties",
+        "summary": "One record by id",
+        "operationId": "getRecord",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            },
+            "description": "Record id"
+          }
+        ],
         "responses": {
           "200": {
-            "description": "JSON response",
+            "description": "One record",
             "content": {
               "application/json": {
                 "schema": {
-                  "type": "array"
+                  "$ref": "#/components/schemas/JsBuiltin"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No record with that id"
+          }
+        }
+      }
+    },
+    "/api/v1/search-index.json": {
+      "get": {
+        "summary": "All records keyed by id",
+        "operationId": "getSearchIndex",
+        "responses": {
+          "200": {
+            "description": "Object with a byId map of every record",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "byId": {
+                      "type": "object",
+                      "additionalProperties": {
+                        "$ref": "#/components/schemas/JsBuiltin"
+                      }
+                    }
+                  },
+                  "required": [
+                    "byId"
+                  ]
                 }
               }
             }
           }
         }
+      }
+    },
+    "/api/v1/meta.json": {
+      "get": {
+        "summary": "Dataset metadata",
+        "operationId": "getMeta",
+        "responses": {
+          "200": {
+            "description": "Record count, source URLs, retrieval time",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "status": {
+                      "type": "string"
+                    },
+                    "lastUpdated": {
+                      "type": "string"
+                    },
+                    "sourceUpdatedAt": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "retrievedAt": {
+                      "type": "string"
+                    },
+                    "recordCount": {
+                      "type": "integer"
+                    },
+                    "version": {
+                      "type": "string"
+                    },
+                    "schemaVersion": {
+                      "type": "string"
+                    },
+                    "source": {
+                      "type": "string"
+                    },
+                    "sourceUrl": {
+                      "type": "string"
+                    },
+                    "license": {
+                      "type": "string"
+                    },
+                    "updateCadence": {
+                      "type": "string"
+                    },
+                    "nextUpdateDue": {
+                      "type": "string"
+                    },
+                    "lastFailedAt": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "failureReason": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "JsBuiltin": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "kind",
+          "description",
+          "status",
+          "memberCount",
+          "members",
+          "specUrl",
+          "mdnUrl",
+          "support"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "description": "Dotted path in the global object",
+            "example": "Intl.DateTimeFormat"
+          },
+          "name": {
+            "type": "string",
+            "description": "Same path",
+            "example": "Intl.DateTimeFormat"
+          },
+          "kind": {
+            "type": "string",
+            "description": "Type of built-in, from the MDN page type",
+            "example": "class",
+            "enum": [
+              "class",
+              "function",
+              "namespace",
+              "global-property",
+              "unknown"
+            ]
+          },
+          "description": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "First paragraph of the MDN page, links stripped",
+            "example": "The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name."
+          },
+          "status": {
+            "type": "string",
+            "description": "Standardisation status from browser-compat-data",
+            "example": "standard",
+            "enum": [
+              "standard",
+              "experimental",
+              "nonstandard",
+              "deprecated",
+              "obsolete"
+            ]
+          },
+          "memberCount": {
+            "type": "integer",
+            "description": "Number of members browser-compat-data records",
+            "example": 47
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Member names, e.g. \"map\", \"@@iterator\", \"prototype\""
+          },
+          "specUrl": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "ECMAScript or proposal anchor"
+          },
+          "mdnUrl": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "description": "MDN reference page"
+          },
+          "support": {
+            "type": "object",
+            "description": "Browser support, one entry per engine",
+            "properties": {
+              "chrome": {
+                "type": "object",
+                "description": "First version of chrome that shipped the feature",
+                "required": [
+                  "added",
+                  "removed"
+                ],
+                "properties": {
+                  "added": {
+                    "type": [
+                      "string",
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "Version string, false when unsupported, null when unrecorded"
+                  },
+                  "removed": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Version that dropped it"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "firefox": {
+                "type": "object",
+                "description": "First version of firefox that shipped the feature",
+                "required": [
+                  "added",
+                  "removed"
+                ],
+                "properties": {
+                  "added": {
+                    "type": [
+                      "string",
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "Version string, false when unsupported, null when unrecorded"
+                  },
+                  "removed": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Version that dropped it"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "safari": {
+                "type": "object",
+                "description": "First version of safari that shipped the feature",
+                "required": [
+                  "added",
+                  "removed"
+                ],
+                "properties": {
+                  "added": {
+                    "type": [
+                      "string",
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "Version string, false when unsupported, null when unrecorded"
+                  },
+                  "removed": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Version that dropped it"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "edge": {
+                "type": "object",
+                "description": "First version of edge that shipped the feature",
+                "required": [
+                  "added",
+                  "removed"
+                ],
+                "properties": {
+                  "added": {
+                    "type": [
+                      "string",
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "Version string, false when unsupported, null when unrecorded"
+                  },
+                  "removed": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Version that dropped it"
+                  }
+                },
+                "additionalProperties": false
+              },
+              "nodejs": {
+                "type": "object",
+                "description": "First version of nodejs that shipped the feature",
+                "required": [
+                  "added",
+                  "removed"
+                ],
+                "properties": {
+                  "added": {
+                    "type": [
+                      "string",
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "Version string, false when unsupported, null when unrecorded"
+                  },
+                  "removed": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "Version that dropped it"
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "required": [
+              "chrome",
+              "firefox",
+              "safari",
+              "edge",
+              "nodejs"
+            ]
+          }
+        },
+        "additionalProperties": false
       }
     }
   }

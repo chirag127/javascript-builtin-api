@@ -1,0 +1,37 @@
+{
+  "id": "Uint8ClampedArray",
+  "name": "Uint8ClampedArray",
+  "kind": "class",
+  "description": "The Uint8ClampedArray typed array represents an array of 8-bit unsigned integers clamped to 0–255. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+  "status": "standard",
+  "memberCount": 1,
+  "members": [
+    "Uint8ClampedArray"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+  "support": {
+    "chrome": {
+      "added": "7",
+      "removed": null
+    },
+    "firefox": {
+      "added": "4",
+      "removed": null
+    },
+    "safari": {
+      "added": "5.1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

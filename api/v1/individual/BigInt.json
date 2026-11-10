@@ -1,0 +1,42 @@
+{
+  "id": "BigInt",
+  "name": "BigInt",
+  "kind": "class",
+  "description": "BigInt values represent integer values which are too high or too low to be represented by the number \"Primitive\", \"primitive\".",
+  "status": "standard",
+  "memberCount": 6,
+  "members": [
+    "BigInt",
+    "asIntN",
+    "asUintN",
+    "toLocaleString",
+    "toString",
+    "valueOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-bigint-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+  "support": {
+    "chrome": {
+      "added": "67",
+      "removed": null
+    },
+    "firefox": {
+      "added": "68",
+      "removed": null
+    },
+    "safari": {
+      "added": "14",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "10.4.0",
+      "removed": null
+    }
+  }
+}

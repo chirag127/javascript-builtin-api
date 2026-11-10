@@ -1,0 +1,38 @@
+{
+  "id": "Intl.Segments",
+  "name": "Intl.Segments",
+  "kind": "unknown",
+  "description": null,
+  "status": "standard",
+  "memberCount": 2,
+  "members": [
+    "containing",
+    "@@iterator"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma402/#sec-segments-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter/segment/Segments",
+  "support": {
+    "chrome": {
+      "added": "87",
+      "removed": null
+    },
+    "firefox": {
+      "added": "125",
+      "removed": null
+    },
+    "safari": {
+      "added": "14.1",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "16.0.0",
+      "removed": null
+    }
+  }
+}

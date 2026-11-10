@@ -1,8 +1,4298 @@
 [
   {
-    "id": "javascript-builtin",
-    "name": "JavaScript Built-ins",
-    "status": "scaffold",
-    "source": "MDN / ECMA-262"
+    "id": "AggregateError",
+    "name": "AggregateError",
+    "kind": "class",
+    "description": "The AggregateError object represents an error when several errors need to be wrapped in a single error. It is thrown when multiple errors need to be reported by an operation, for example by \"Promise.any()\", when all promises passed to it reject.",
+    "status": "standard",
+    "memberCount": 3,
+    "members": [
+      "AggregateError",
+      "errors",
+      "serializable_object"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AggregateError",
+    "support": {
+      "chrome": {
+        "added": "85",
+        "removed": null
+      },
+      "firefox": {
+        "added": "79",
+        "removed": null
+      },
+      "safari": {
+        "added": "14",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "15.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Array",
+    "name": "Array",
+    "kind": "class",
+    "description": "The Array object, as with arrays in other programming languages, enables storing a collection of multiple items under a single variable name, and has members for performing common array operations.",
+    "status": "standard",
+    "memberCount": 47,
+    "members": [
+      "Array",
+      "at",
+      "concat",
+      "copyWithin",
+      "entries",
+      "every",
+      "fill",
+      "filter",
+      "find",
+      "findIndex",
+      "findLast",
+      "findLastIndex",
+      "flat",
+      "flatMap",
+      "forEach",
+      "from",
+      "fromAsync",
+      "includes",
+      "indexOf",
+      "isArray",
+      "join",
+      "keys",
+      "lastIndexOf",
+      "length",
+      "map",
+      "of",
+      "pop",
+      "push",
+      "reduce",
+      "reduceRight",
+      "reverse",
+      "shift",
+      "slice",
+      "some",
+      "sort",
+      "splice",
+      "toLocaleString",
+      "toReversed",
+      "toSorted",
+      "toSpliced",
+      "toString",
+      "unshift",
+      "values",
+      "with",
+      "@@iterator",
+      "@@species",
+      "@@unscopables"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-array-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Array",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "ArrayBuffer",
+    "name": "ArrayBuffer",
+    "kind": "class",
+    "description": "The ArrayBuffer object is used to represent a generic raw binary data buffer.",
+    "status": "standard",
+    "memberCount": 11,
+    "members": [
+      "ArrayBuffer",
+      "byteLength",
+      "detached",
+      "isView",
+      "maxByteLength",
+      "resizable",
+      "resize",
+      "slice",
+      "transfer",
+      "transferToFixedLength",
+      "@@species"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-arraybuffer-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "AsyncDisposableStack",
+    "name": "AsyncDisposableStack",
+    "kind": "class",
+    "description": "The AsyncDisposableStack object represents a stack of async disposers to run when the stack itself is disposed. Disposer functions are executed in reverse order of registration, with strong error handling guarantees. Calling its move() method will transfer responsibility for calling the current registered disposers to a new AsyncDisposableStack and prevent registering any additional disposers.",
+    "status": "standard",
+    "memberCount": 8,
+    "members": [
+      "AsyncDisposableStack",
+      "adopt",
+      "defer",
+      "disposeAsync",
+      "disposed",
+      "move",
+      "use",
+      "@@asyncDispose"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-async-explicit-resource-management/#sec-asyncdisposablestack-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncDisposableStack",
+    "support": {
+      "chrome": {
+        "added": "134",
+        "removed": null
+      },
+      "firefox": {
+        "added": "141",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "24.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "AsyncFunction",
+    "name": "AsyncFunction",
+    "kind": "class",
+    "description": "The AsyncFunction object provides methods for async functions. In JavaScript, every async function is actually an AsyncFunction object.",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "AsyncFunction"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction",
+    "support": {
+      "chrome": {
+        "added": "55",
+        "removed": null
+      },
+      "firefox": {
+        "added": "52",
+        "removed": null
+      },
+      "safari": {
+        "added": "10.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "15",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "7.6.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "AsyncGenerator",
+    "name": "AsyncGenerator",
+    "kind": "class",
+    "description": "The AsyncGenerator object is returned by an \"Statements/asyncfunction\", \"async generator function\", \"\", 1 and it conforms to both the async iterable protocol and the async iterator protocol.",
+    "status": "standard",
+    "memberCount": 3,
+    "members": [
+      "next",
+      "return",
+      "throw"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator",
+    "support": {
+      "chrome": {
+        "added": "63",
+        "removed": null
+      },
+      "firefox": {
+        "added": "55",
+        "removed": null
+      },
+      "safari": {
+        "added": "12",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "10.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "AsyncGeneratorFunction",
+    "name": "AsyncGeneratorFunction",
+    "kind": "class",
+    "description": "The AsyncGeneratorFunction object provides methods for async generator functions. In JavaScript, every async generator function is actually an AsyncGeneratorFunction object.",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "AsyncGeneratorFunction"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgeneratorfunction-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGeneratorFunction",
+    "support": {
+      "chrome": {
+        "added": "63",
+        "removed": null
+      },
+      "firefox": {
+        "added": "55",
+        "removed": null
+      },
+      "safari": {
+        "added": "12",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "10.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "AsyncIterator",
+    "name": "AsyncIterator",
+    "kind": "class",
+    "description": "An AsyncIterator object is an object that conforms to the async iterator protocol by providing a next() method that returns a promise fulfilling to an iterator result object. The AsyncIterator.prototype object is a hidden global object that all built-in async iterators inherit from. It provides a [Symbol.asyncIterator](/en-US/docs/Web/JavaScript/Reference/GlobalObjects/AsyncIterator/Symbol.asyncIterator) method that returns the async iterator object itself, making the async iterator also async iterable.",
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "@@asyncDispose",
+      "@@asyncIterator"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asynciteratorprototype"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncIterator",
+    "support": {
+      "chrome": {
+        "added": "63",
+        "removed": null
+      },
+      "firefox": {
+        "added": "57",
+        "removed": null
+      },
+      "safari": {
+        "added": "11.1",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "10.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Atomics",
+    "name": "Atomics",
+    "kind": "namespace",
+    "description": "The Atomics namespace object contains static methods for carrying out atomic operations. They are used with \"SharedArrayBuffer\" and \"ArrayBuffer\" objects.",
+    "status": "standard",
+    "memberCount": 15,
+    "members": [
+      "Atomic_operations_on_non_shared_buffers",
+      "add",
+      "and",
+      "compareExchange",
+      "exchange",
+      "isLockFree",
+      "load",
+      "notify",
+      "or",
+      "pause",
+      "store",
+      "sub",
+      "wait",
+      "waitAsync",
+      "xor"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics-object"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Atomics",
+    "support": {
+      "chrome": {
+        "added": "68",
+        "removed": null
+      },
+      "firefox": {
+        "added": "78",
+        "removed": null
+      },
+      "safari": {
+        "added": "15.2",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "8.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "BigInt",
+    "name": "BigInt",
+    "kind": "class",
+    "description": "BigInt values represent integer values which are too high or too low to be represented by the number \"Primitive\", \"primitive\".",
+    "status": "standard",
+    "memberCount": 6,
+    "members": [
+      "BigInt",
+      "asIntN",
+      "asUintN",
+      "toLocaleString",
+      "toString",
+      "valueOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-bigint-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt",
+    "support": {
+      "chrome": {
+        "added": "67",
+        "removed": null
+      },
+      "firefox": {
+        "added": "68",
+        "removed": null
+      },
+      "safari": {
+        "added": "14",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "10.4.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "BigInt64Array",
+    "name": "BigInt64Array",
+    "kind": "class",
+    "description": "The BigInt64Array typed array represents an array of 64-bit signed integers in the platform byte order. If control over byte order is needed, use \"DataView\" instead. The contents are initialized to 0n unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "BigInt64Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigInt64Array",
+    "support": {
+      "chrome": {
+        "added": "67",
+        "removed": null
+      },
+      "firefox": {
+        "added": "68",
+        "removed": null
+      },
+      "safari": {
+        "added": "15",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "10.4.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "BigUint64Array",
+    "name": "BigUint64Array",
+    "kind": "class",
+    "description": "The BigUint64Array typed array represents an array of 64-bit unsigned integers in the platform byte order. If control over byte order is needed, use \"DataView\" instead. The contents are initialized to 0n unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "BigUint64Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/BigUint64Array",
+    "support": {
+      "chrome": {
+        "added": "67",
+        "removed": null
+      },
+      "firefox": {
+        "added": "68",
+        "removed": null
+      },
+      "safari": {
+        "added": "15",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "10.4.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Boolean",
+    "name": "Boolean",
+    "kind": "class",
+    "description": "Boolean values can be one of two values: true or false, representing the truth value of a logical proposition.",
+    "status": "standard",
+    "memberCount": 3,
+    "members": [
+      "Boolean",
+      "toString",
+      "valueOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "DataView",
+    "name": "DataView",
+    "kind": "class",
+    "description": "The DataView view provides a low-level interface for reading and writing multiple number types in a binary \"ArrayBuffer\", without having to care about the platform's endianness.",
+    "status": "standard",
+    "memberCount": 26,
+    "members": [
+      "DataView",
+      "buffer",
+      "byteLength",
+      "byteOffset",
+      "getBigInt64",
+      "getBigUint64",
+      "getFloat16",
+      "getFloat32",
+      "getFloat64",
+      "getInt16",
+      "getInt32",
+      "getInt8",
+      "getUint16",
+      "getUint32",
+      "getUint8",
+      "setBigInt64",
+      "setBigUint64",
+      "setFloat16",
+      "setFloat32",
+      "setFloat64",
+      "setInt16",
+      "setInt32",
+      "setInt8",
+      "setUint16",
+      "setUint32",
+      "setUint8"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-dataview-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DataView",
+    "support": {
+      "chrome": {
+        "added": "9",
+        "removed": null
+      },
+      "firefox": {
+        "added": "15",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Date",
+    "name": "Date",
+    "kind": "class",
+    "description": "JavaScript Date objects represent a single moment in time in a platform-independent format. Date objects encapsulate an integral number that represents milliseconds since the midnight at the beginning of January 1, 1970, UTC (the epoch).",
+    "status": "standard",
+    "memberCount": 52,
+    "members": [
+      "Date",
+      "UTC",
+      "getDate",
+      "getDay",
+      "getFullYear",
+      "getHours",
+      "getMilliseconds",
+      "getMinutes",
+      "getMonth",
+      "getSeconds",
+      "getTime",
+      "getTimezoneOffset",
+      "getUTCDate",
+      "getUTCDay",
+      "getUTCFullYear",
+      "getUTCHours",
+      "getUTCMilliseconds",
+      "getUTCMinutes",
+      "getUTCMonth",
+      "getUTCSeconds",
+      "getYear",
+      "now",
+      "parse",
+      "setDate",
+      "setFullYear",
+      "setHours",
+      "setMilliseconds",
+      "setMinutes",
+      "setMonth",
+      "setSeconds",
+      "setTime",
+      "setUTCDate",
+      "setUTCFullYear",
+      "setUTCHours",
+      "setUTCMilliseconds",
+      "setUTCMinutes",
+      "setUTCMonth",
+      "setUTCSeconds",
+      "setYear",
+      "toDateString",
+      "toGMTString",
+      "toISOString",
+      "toJSON",
+      "toLocaleDateString",
+      "toLocaleString",
+      "toLocaleTimeString",
+      "toString",
+      "toTemporalInstant",
+      "toTimeString",
+      "toUTCString",
+      "valueOf",
+      "@@toPrimitive"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "decodeURI",
+    "name": "decodeURI",
+    "kind": "function",
+    "description": "The decodeURI() function decodes a Uniform Resource Identifier (URI) previously created by \"encodeURI()\" or a similar routine.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuri-encodeduri"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/decodeURI",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "decodeURIComponent",
+    "name": "decodeURIComponent",
+    "kind": "function",
+    "description": "The decodeURIComponent() function decodes a Uniform Resource Identifier (URI) component previously created by \"encodeURIComponent()\" or by a similar routine.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-decodeuricomponent-encodeduricomponent"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/decodeURIComponent",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "DisposableStack",
+    "name": "DisposableStack",
+    "kind": "class",
+    "description": "The DisposableStack object represents a stack of disposers to run when the stack itself is disposed. Disposer functions are executed in reverse order of registration, with strong error handling guarantees. Calling its move() method will transfer responsibility for calling the current registered disposers to a new DisposableStack and prevent registering any additional disposers.",
+    "status": "standard",
+    "memberCount": 8,
+    "members": [
+      "DisposableStack",
+      "adopt",
+      "defer",
+      "dispose",
+      "disposed",
+      "move",
+      "use",
+      "@@dispose"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-async-explicit-resource-management/#sec-disposablestack-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/DisposableStack",
+    "support": {
+      "chrome": {
+        "added": "134",
+        "removed": null
+      },
+      "firefox": {
+        "added": "141",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "24.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "encodeURI",
+    "name": "encodeURI",
+    "kind": "function",
+    "description": "The encodeURI() function encodes a \"URI\" by replacing each instance of certain characters by one, two, three, or four escape sequences representing the \"UTF-8\" encoding of the character (will only be four escape sequences for characters composed of two surrogate characters). Compared to \"encodeURIComponent()\", this function encodes fewer characters, preserving those that are part of the URI syntax.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuri-uri"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeURI",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "encodeURIComponent",
+    "name": "encodeURIComponent",
+    "kind": "function",
+    "description": "The encodeURIComponent() function encodes a \"URI\" by replacing each instance of certain characters by one, two, three, or four escape sequences representing the \"UTF-8\" encoding of the character (will only be four escape sequences for characters composed of two surrogate characters). Compared to \"encodeURI()\", this function encodes more characters, including those that are part of the URI syntax.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-encodeuricomponent-uricomponent"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/encodeURIComponent",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Error",
+    "name": "Error",
+    "kind": "class",
+    "description": "Error objects are thrown when runtime errors occur. The Error object can also be used as a base object for user-defined exceptions. See below for standard built-in error types.",
+    "status": "standard",
+    "memberCount": 13,
+    "members": [
+      "Error",
+      "captureStackTrace",
+      "cause",
+      "columnNumber",
+      "fileName",
+      "isError",
+      "lineNumber",
+      "message",
+      "name",
+      "serializable_object",
+      "stack",
+      "stackTraceLimit",
+      "toString"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "escape",
+    "name": "escape",
+    "kind": "function",
+    "description": "> [!NOTE] > escape() is a non-standard function implemented by browsers and was only standardized for cross-engine compatibility. It is not required to be implemented by all JavaScript engines and may not work everywhere. Use \"encodeURIComponent()\" or \"encodeURI()\" if possible.",
+    "status": "deprecated",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-escape-string"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/escape",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "eval",
+    "name": "eval",
+    "kind": "function",
+    "description": "> [!WARNING] > The argument passed to this function is dynamically parsed and executed as JavaScript. > APIs like this are known as injection sinks, and are potentially a vector for cross-site-scripting (XSS) attacks. > > You can mitigate this risk by always passing \"TrustedScript\" objects instead of strings and enforcing trusted types. > > See Security considerations for more information.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-eval-x"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/eval",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "EvalError",
+    "name": "EvalError",
+    "kind": "class",
+    "description": "The EvalError object indicates an error regarding the global \"GlobalObjects/eval\", \"eval()\" function. This exception is not thrown by JavaScript anymore, however the EvalError object remains for compatibility.",
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "EvalError",
+      "serializable_object"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-evalerror"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/EvalError",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "FinalizationRegistry",
+    "name": "FinalizationRegistry",
+    "kind": "class",
+    "description": "A FinalizationRegistry object lets you request a callback when a value is garbage-collected.",
+    "status": "standard",
+    "memberCount": 3,
+    "members": [
+      "FinalizationRegistry",
+      "register",
+      "unregister"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/managing-memory.html#sec-finalization-registry-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/FinalizationRegistry",
+    "support": {
+      "chrome": {
+        "added": "84",
+        "removed": null
+      },
+      "firefox": {
+        "added": "79",
+        "removed": null
+      },
+      "safari": {
+        "added": "14.1",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "14.6.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Float16Array",
+    "name": "Float16Array",
+    "kind": "class",
+    "description": "The Float16Array typed array represents an array of 16-bit floating point numbers in the platform byte order. If control over byte order is needed, use \"DataView\" instead. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "Float16Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-float16array"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float16Array",
+    "support": {
+      "chrome": {
+        "added": "135",
+        "removed": null
+      },
+      "firefox": {
+        "added": "129",
+        "removed": null
+      },
+      "safari": {
+        "added": "18.2",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "24.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Float32Array",
+    "name": "Float32Array",
+    "kind": "class",
+    "description": "The Float32Array typed array represents an array of 32-bit floating point numbers in the platform byte order. If control over byte order is needed, use \"DataView\" instead. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "Float32Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float32Array",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Float64Array",
+    "name": "Float64Array",
+    "kind": "class",
+    "description": "The Float64Array typed array represents an array of 64-bit floating point numbers in the platform byte order. If control over byte order is needed, use \"DataView\" instead. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "Float64Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Float64Array",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Function",
+    "name": "Function",
+    "kind": "class",
+    "description": "The Function object provides methods for functions. In JavaScript, every function is actually a Function object.",
+    "status": "standard",
+    "memberCount": 11,
+    "members": [
+      "Function",
+      "apply",
+      "arguments",
+      "bind",
+      "call",
+      "caller",
+      "displayName",
+      "length",
+      "name",
+      "toString",
+      "@@hasInstance"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-function-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Function",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Generator",
+    "name": "Generator",
+    "kind": "class",
+    "description": "The Generator object is returned by a \"Statements/function\", \"generator function\", \"\", 1 and it conforms to both the iterable protocol and the iterator protocol.",
+    "status": "standard",
+    "memberCount": 3,
+    "members": [
+      "next",
+      "return",
+      "throw"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generator-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Generator",
+    "support": {
+      "chrome": {
+        "added": "39",
+        "removed": null
+      },
+      "firefox": {
+        "added": "26",
+        "removed": null
+      },
+      "safari": {
+        "added": "10",
+        "removed": null
+      },
+      "edge": {
+        "added": "13",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "4.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "GeneratorFunction",
+    "name": "GeneratorFunction",
+    "kind": "class",
+    "description": "The GeneratorFunction object provides methods for generator functions. In JavaScript, every generator function is actually a GeneratorFunction object.",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "GeneratorFunction"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+    "support": {
+      "chrome": {
+        "added": "39",
+        "removed": null
+      },
+      "firefox": {
+        "added": "26",
+        "removed": null
+      },
+      "safari": {
+        "added": "10",
+        "removed": null
+      },
+      "edge": {
+        "added": "13",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "4.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "globalThis",
+    "name": "globalThis",
+    "kind": "global-property",
+    "description": "The globalThis global property contains the global this value, which is usually akin to the global object.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-globalthis"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/globalThis",
+    "support": {
+      "chrome": {
+        "added": "71",
+        "removed": null
+      },
+      "firefox": {
+        "added": "65",
+        "removed": null
+      },
+      "safari": {
+        "added": "12.1",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "12.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Infinity",
+    "name": "Infinity",
+    "kind": "global-property",
+    "description": "The Infinity global property is a numeric value representing infinity.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-value-properties-of-the-global-object-infinity"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Int16Array",
+    "name": "Int16Array",
+    "kind": "class",
+    "description": "The Int16Array typed array represents an array of 16-bit signed integers in the platform byte order. If control over byte order is needed, use \"DataView\" instead. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "Int16Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int16Array",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Int32Array",
+    "name": "Int32Array",
+    "kind": "class",
+    "description": "The Int32Array typed array represents an array of 32-bit signed integers in the platform byte order. If control over byte order is needed, use \"DataView\" instead. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "Int32Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int32Array",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Int8Array",
+    "name": "Int8Array",
+    "kind": "class",
+    "description": "The Int8Array typed array represents an array of 8-bit signed integers. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "Int8Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Int8Array",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "InternalError",
+    "name": "InternalError",
+    "kind": "class",
+    "description": "The InternalError object indicates an error that occurred internally in the JavaScript engine.",
+    "status": "nonstandard",
+    "memberCount": 1,
+    "members": [
+      "InternalError"
+    ],
+    "specUrl": [],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+    "support": {
+      "chrome": {
+        "added": false,
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": false,
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": false,
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl",
+    "name": "Intl",
+    "kind": "namespace",
+    "description": "The Intl namespace object contains several constructors as well as functionality common to the internationalization constructors and other language sensitive functions. Collectively, they comprise the ECMAScript Internationalization API, which provides language sensitive string comparison, number formatting, date and time formatting, and more.",
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "getCanonicalLocales",
+      "supportedValuesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#intl-object"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl",
+    "support": {
+      "chrome": {
+        "added": "24",
+        "removed": null
+      },
+      "firefox": {
+        "added": "29",
+        "removed": null
+      },
+      "safari": {
+        "added": "10",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.Collator",
+    "name": "Intl.Collator",
+    "kind": "class",
+    "description": "The Intl.Collator object enables language-sensitive string comparison.",
+    "status": "standard",
+    "memberCount": 4,
+    "members": [
+      "Collator",
+      "compare",
+      "resolvedOptions",
+      "supportedLocalesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#collator-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Collator",
+    "support": {
+      "chrome": {
+        "added": "24",
+        "removed": null
+      },
+      "firefox": {
+        "added": "29",
+        "removed": null
+      },
+      "safari": {
+        "added": "10",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.DateTimeFormat",
+    "name": "Intl.DateTimeFormat",
+    "kind": "class",
+    "description": "The Intl.DateTimeFormat object enables language-sensitive date and time formatting.",
+    "status": "standard",
+    "memberCount": 7,
+    "members": [
+      "DateTimeFormat",
+      "format",
+      "formatRange",
+      "formatRangeToParts",
+      "formatToParts",
+      "resolvedOptions",
+      "supportedLocalesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#datetimeformat-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DateTimeFormat",
+    "support": {
+      "chrome": {
+        "added": "24",
+        "removed": null
+      },
+      "firefox": {
+        "added": "29",
+        "removed": null
+      },
+      "safari": {
+        "added": "10",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.DisplayNames",
+    "name": "Intl.DisplayNames",
+    "kind": "class",
+    "description": "The Intl.DisplayNames object enables the consistent translation of language, region and script display names.",
+    "status": "standard",
+    "memberCount": 4,
+    "members": [
+      "DisplayNames",
+      "of",
+      "resolvedOptions",
+      "supportedLocalesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#intl-displaynames-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames",
+    "support": {
+      "chrome": {
+        "added": "81",
+        "removed": null
+      },
+      "firefox": {
+        "added": "86",
+        "removed": null
+      },
+      "safari": {
+        "added": "14.1",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "14.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.DurationFormat",
+    "name": "Intl.DurationFormat",
+    "kind": "class",
+    "description": "The Intl.DurationFormat object enables language-sensitive duration formatting.",
+    "status": "standard",
+    "memberCount": 5,
+    "members": [
+      "DurationFormat",
+      "format",
+      "formatToParts",
+      "resolvedOptions",
+      "supportedLocalesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-intl-duration-format/#durationformat-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DurationFormat",
+    "support": {
+      "chrome": {
+        "added": "129",
+        "removed": null
+      },
+      "firefox": {
+        "added": "136",
+        "removed": null
+      },
+      "safari": {
+        "added": "16.4",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "23.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.ListFormat",
+    "name": "Intl.ListFormat",
+    "kind": "class",
+    "description": "The Intl.ListFormat object enables language-sensitive list formatting.",
+    "status": "standard",
+    "memberCount": 5,
+    "members": [
+      "ListFormat",
+      "format",
+      "formatToParts",
+      "resolvedOptions",
+      "supportedLocalesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#listformat-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/ListFormat",
+    "support": {
+      "chrome": {
+        "added": "72",
+        "removed": null
+      },
+      "firefox": {
+        "added": "78",
+        "removed": null
+      },
+      "safari": {
+        "added": "14.1",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "12.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.Locale",
+    "name": "Intl.Locale",
+    "kind": "class",
+    "description": "The Intl.Locale object is a standard built-in property of the Intl object that represents a Unicode locale identifier.",
+    "status": "standard",
+    "memberCount": 22,
+    "members": [
+      "Locale",
+      "baseName",
+      "calendar",
+      "caseFirst",
+      "collation",
+      "getCalendars",
+      "getCollations",
+      "getHourCycles",
+      "getNumberingSystems",
+      "getTextInfo",
+      "getTimeZones",
+      "getWeekInfo",
+      "hourCycle",
+      "language",
+      "maximize",
+      "minimize",
+      "numberingSystem",
+      "numeric",
+      "region",
+      "script",
+      "toString",
+      "variants"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#locale-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Locale",
+    "support": {
+      "chrome": {
+        "added": "74",
+        "removed": null
+      },
+      "firefox": {
+        "added": "75",
+        "removed": null
+      },
+      "safari": {
+        "added": "14",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "12.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.NumberFormat",
+    "name": "Intl.NumberFormat",
+    "kind": "class",
+    "description": "The Intl.NumberFormat object enables language-sensitive number formatting.",
+    "status": "standard",
+    "memberCount": 7,
+    "members": [
+      "NumberFormat",
+      "format",
+      "formatRange",
+      "formatRangeToParts",
+      "formatToParts",
+      "resolvedOptions",
+      "supportedLocalesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#numberformat-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat",
+    "support": {
+      "chrome": {
+        "added": "24",
+        "removed": null
+      },
+      "firefox": {
+        "added": "29",
+        "removed": null
+      },
+      "safari": {
+        "added": "10",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.PluralRules",
+    "name": "Intl.PluralRules",
+    "kind": "class",
+    "description": "The Intl.PluralRules object enables plural-sensitive formatting and plural-related language rules.",
+    "status": "standard",
+    "memberCount": 5,
+    "members": [
+      "PluralRules",
+      "resolvedOptions",
+      "select",
+      "selectRange",
+      "supportedLocalesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#pluralrules-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules",
+    "support": {
+      "chrome": {
+        "added": "63",
+        "removed": null
+      },
+      "firefox": {
+        "added": "58",
+        "removed": null
+      },
+      "safari": {
+        "added": "13",
+        "removed": null
+      },
+      "edge": {
+        "added": "18",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "10.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.RelativeTimeFormat",
+    "name": "Intl.RelativeTimeFormat",
+    "kind": "class",
+    "description": "The Intl.RelativeTimeFormat object enables language-sensitive relative time formatting.",
+    "status": "standard",
+    "memberCount": 5,
+    "members": [
+      "RelativeTimeFormat",
+      "format",
+      "formatToParts",
+      "resolvedOptions",
+      "supportedLocalesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#relativetimeformat-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat",
+    "support": {
+      "chrome": {
+        "added": "71",
+        "removed": null
+      },
+      "firefox": {
+        "added": "65",
+        "removed": null
+      },
+      "safari": {
+        "added": "14",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "12.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.Segmenter",
+    "name": "Intl.Segmenter",
+    "kind": "class",
+    "description": "The Intl.Segmenter object enables locale-sensitive text segmentation, enabling you to get meaningful items (graphemes, words or sentences) from a string.",
+    "status": "standard",
+    "memberCount": 4,
+    "members": [
+      "Segmenter",
+      "resolvedOptions",
+      "segment",
+      "supportedLocalesOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#segmenter-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter",
+    "support": {
+      "chrome": {
+        "added": "87",
+        "removed": null
+      },
+      "firefox": {
+        "added": "125",
+        "removed": null
+      },
+      "safari": {
+        "added": "14.1",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "16.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Intl.Segments",
+    "name": "Intl.Segments",
+    "kind": "unknown",
+    "description": null,
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "containing",
+      "@@iterator"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma402/#sec-segments-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter/segment/Segments",
+    "support": {
+      "chrome": {
+        "added": "87",
+        "removed": null
+      },
+      "firefox": {
+        "added": "125",
+        "removed": null
+      },
+      "safari": {
+        "added": "14.1",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "16.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "isFinite",
+    "name": "isFinite",
+    "kind": "function",
+    "description": "The isFinite() function determines whether a value is finite, first converting the value to a number if necessary. A finite number is one that's not \"NaN\" or ±\"Infinity\". Because coercion inside the isFinite() function can be surprising, you may prefer to use \"Number.isFinite()\".",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-isfinite-number"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/isFinite",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "isNaN",
+    "name": "isNaN",
+    "kind": "function",
+    "description": "The isNaN() function determines whether a value is \"NaN\", first converting the value to a number if necessary. Because coercion inside the isNaN() function can be surprising, you may prefer to use \"Number.isNaN()\".",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-isnan-number"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/isNaN",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Iterator",
+    "name": "Iterator",
+    "kind": "class",
+    "description": "An Iterator object is an object that conforms to the iterator protocol by providing a next() method that returns an iterator result object. All built-in iterators inherit from the Iterator class. The Iterator class provides a [Symbol.iterator](/en-US/docs/Web/JavaScript/Reference/GlobalObjects/Iterator/Symbol.iterator) method that returns the iterator object itself, making the iterator also iterable. It also provides some helper methods for working with iterators.",
+    "status": "standard",
+    "memberCount": 22,
+    "members": [
+      "Iterator",
+      "chunks",
+      "concat",
+      "drop",
+      "every",
+      "filter",
+      "find",
+      "flatMap",
+      "forEach",
+      "from",
+      "includes",
+      "join",
+      "map",
+      "reduce",
+      "some",
+      "take",
+      "toArray",
+      "windows",
+      "zip",
+      "zipKeyed",
+      "@@dispose",
+      "@@iterator"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator",
+    "support": {
+      "chrome": {
+        "added": "38",
+        "removed": null
+      },
+      "firefox": {
+        "added": "17",
+        "removed": null
+      },
+      "safari": {
+        "added": "10",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "JSON",
+    "name": "JSON",
+    "kind": "namespace",
+    "description": "The JSON namespace object contains static methods for parsing values from and converting values to JavaScript Object Notation (\"JSON\").",
+    "status": "standard",
+    "memberCount": 5,
+    "members": [
+      "isRawJSON",
+      "json_superset",
+      "parse",
+      "rawJSON",
+      "stringify"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-object"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+    "support": {
+      "chrome": {
+        "added": "3",
+        "removed": null
+      },
+      "firefox": {
+        "added": "3.5",
+        "removed": null
+      },
+      "safari": {
+        "added": "4",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Map",
+    "name": "Map",
+    "kind": "class",
+    "description": "The Map object holds key-value pairs and remembers the original insertion order of the keys. Any value (both objects and \"Primitive\", \"primitive values\") may be used as either a key or a value.",
+    "status": "standard",
+    "memberCount": 17,
+    "members": [
+      "Map",
+      "clear",
+      "delete",
+      "entries",
+      "forEach",
+      "get",
+      "getOrInsert",
+      "getOrInsertComputed",
+      "groupBy",
+      "has",
+      "key_equality_for_zeros",
+      "keys",
+      "set",
+      "size",
+      "values",
+      "@@iterator",
+      "@@species"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-map-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Map",
+    "support": {
+      "chrome": {
+        "added": "38",
+        "removed": null
+      },
+      "firefox": {
+        "added": "13",
+        "removed": null
+      },
+      "safari": {
+        "added": "8",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Math",
+    "name": "Math",
+    "kind": "namespace",
+    "description": "The Math namespace object contains static properties and methods for mathematical constants and functions.",
+    "status": "standard",
+    "memberCount": 45,
+    "members": [
+      "E",
+      "LN10",
+      "LN2",
+      "LOG10E",
+      "LOG2E",
+      "PI",
+      "SQRT1_2",
+      "SQRT2",
+      "abs",
+      "acos",
+      "acosh",
+      "asin",
+      "asinh",
+      "atan",
+      "atan2",
+      "atanh",
+      "cbrt",
+      "ceil",
+      "clz32",
+      "cos",
+      "cosh",
+      "exp",
+      "expm1",
+      "f16round",
+      "floor",
+      "fround",
+      "hypot",
+      "imul",
+      "log",
+      "log10",
+      "log1p",
+      "log2",
+      "max",
+      "min",
+      "pow",
+      "random",
+      "round",
+      "sign",
+      "sin",
+      "sinh",
+      "sqrt",
+      "sumPrecise",
+      "tan",
+      "tanh",
+      "trunc"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-math-object"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "NaN",
+    "name": "NaN",
+    "kind": "global-property",
+    "description": "The NaN global property is a value representing Not-A-Number.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-value-properties-of-the-global-object-nan"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/NaN",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Number",
+    "name": "Number",
+    "kind": "class",
+    "description": "Number values represent floating-point numbers like 37 or -9.25.",
+    "status": "standard",
+    "memberCount": 21,
+    "members": [
+      "EPSILON",
+      "MAX_SAFE_INTEGER",
+      "MAX_VALUE",
+      "MIN_SAFE_INTEGER",
+      "MIN_VALUE",
+      "NaN",
+      "NEGATIVE_INFINITY",
+      "Number",
+      "POSITIVE_INFINITY",
+      "isFinite",
+      "isInteger",
+      "isNaN",
+      "isSafeInteger",
+      "parseFloat",
+      "parseInt",
+      "toExponential",
+      "toFixed",
+      "toLocaleString",
+      "toPrecision",
+      "toString",
+      "valueOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-number-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Number",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Object",
+    "name": "Object",
+    "kind": "class",
+    "description": "The Object type represents one of JavaScript's data types. It is used to store various keyed collections and more complex entities. Objects can be created using the \"Object/Object\", \"Object()\" constructor or the object initializer / literal syntax.",
+    "status": "standard",
+    "memberCount": 36,
+    "members": [
+      "Object",
+      "assign",
+      "constructor",
+      "create",
+      "defineGetter",
+      "defineProperties",
+      "defineProperty",
+      "defineSetter",
+      "entries",
+      "freeze",
+      "fromEntries",
+      "getOwnPropertyDescriptor",
+      "getOwnPropertyDescriptors",
+      "getOwnPropertyNames",
+      "getOwnPropertySymbols",
+      "getPrototypeOf",
+      "groupBy",
+      "hasOwn",
+      "hasOwnProperty",
+      "is",
+      "isExtensible",
+      "isFrozen",
+      "isPrototypeOf",
+      "isSealed",
+      "keys",
+      "lookupGetter",
+      "lookupSetter",
+      "preventExtensions",
+      "propertyIsEnumerable",
+      "proto",
+      "seal",
+      "setPrototypeOf",
+      "toLocaleString",
+      "toString",
+      "valueOf",
+      "values"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-object-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "parseFloat",
+    "name": "parseFloat",
+    "kind": "function",
+    "description": "The parseFloat() function parses a string argument and returns a floating point number.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-parsefloat-string"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/parseFloat",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "parseInt",
+    "name": "parseInt",
+    "kind": "function",
+    "description": "The parseInt() function parses a string argument and returns an integer of the specified radix (the base in mathematical numeral systems).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "leading_zero_strings_as_decimal"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-parseint-string-radix"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/parseInt",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Promise",
+    "name": "Promise",
+    "kind": "class",
+    "description": "The Promise object represents the eventual completion (or failure) of an asynchronous operation and its resulting value.",
+    "status": "standard",
+    "memberCount": 16,
+    "members": [
+      "Promise",
+      "all",
+      "allKeyed",
+      "allSettled",
+      "allSettledKeyed",
+      "any",
+      "catch",
+      "finally",
+      "incumbent_settings_object_tracking",
+      "race",
+      "reject",
+      "resolve",
+      "then",
+      "try",
+      "withResolvers",
+      "@@species"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-promise-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise",
+    "support": {
+      "chrome": {
+        "added": "32",
+        "removed": null
+      },
+      "firefox": {
+        "added": "29",
+        "removed": null
+      },
+      "safari": {
+        "added": "8",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Proxy",
+    "name": "Proxy",
+    "kind": "class",
+    "description": "The Proxy object enables you to create a proxy for another object, which can intercept and redefine fundamental operations for that object.",
+    "status": "standard",
+    "memberCount": 3,
+    "members": [
+      "Proxy",
+      "handler",
+      "revocable"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/reflection.html#sec-proxy-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Proxy",
+    "support": {
+      "chrome": {
+        "added": "49",
+        "removed": null
+      },
+      "firefox": {
+        "added": "18",
+        "removed": null
+      },
+      "safari": {
+        "added": "10",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "6.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "RangeError",
+    "name": "RangeError",
+    "kind": "class",
+    "description": "The RangeError object indicates an error when a value is not in the set or range of allowed values.",
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "RangeError",
+      "serializable_object"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-rangeerror"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RangeError",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "ReferenceError",
+    "name": "ReferenceError",
+    "kind": "class",
+    "description": "The ReferenceError object represents an error when a variable that doesn't exist (or hasn't yet been initialized) in the current scope is referenced.",
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "ReferenceError",
+      "serializable_object"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-referenceerror"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Reflect",
+    "name": "Reflect",
+    "kind": "namespace",
+    "description": "The Reflect namespace object contains static methods for invoking interceptable JavaScript object internal methods. The methods are the same as those of proxy handlers.",
+    "status": "standard",
+    "memberCount": 13,
+    "members": [
+      "apply",
+      "construct",
+      "defineProperty",
+      "deleteProperty",
+      "get",
+      "getOwnPropertyDescriptor",
+      "getPrototypeOf",
+      "has",
+      "isExtensible",
+      "ownKeys",
+      "preventExtensions",
+      "set",
+      "setPrototypeOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/reflection.html#sec-reflect-object"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Reflect",
+    "support": {
+      "chrome": {
+        "added": "49",
+        "removed": null
+      },
+      "firefox": {
+        "added": "42",
+        "removed": null
+      },
+      "safari": {
+        "added": "10",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "6.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "RegExp",
+    "name": "RegExp",
+    "kind": "class",
+    "description": "The RegExp object is used for matching text with a pattern.",
+    "status": "standard",
+    "memberCount": 29,
+    "members": [
+      "RegExp",
+      "compile",
+      "dotAll",
+      "escape",
+      "exec",
+      "flags",
+      "global",
+      "hasIndices",
+      "ignoreCase",
+      "input",
+      "lastIndex",
+      "lastMatch",
+      "lastParen",
+      "leftContext",
+      "multiline",
+      "n",
+      "rightContext",
+      "source",
+      "sticky",
+      "test",
+      "toString",
+      "unicode",
+      "unicodeSets",
+      "@@match",
+      "@@matchAll",
+      "@@replace",
+      "@@search",
+      "@@species",
+      "@@split"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-regexp-regular-expression-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/RegExp",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Set",
+    "name": "Set",
+    "kind": "class",
+    "description": "The Set object lets you store unique values of any type, whether \"Primitive\", \"primitive values\" or object references.",
+    "status": "standard",
+    "memberCount": 20,
+    "members": [
+      "Set",
+      "add",
+      "clear",
+      "delete",
+      "difference",
+      "entries",
+      "forEach",
+      "has",
+      "intersection",
+      "isDisjointFrom",
+      "isSubsetOf",
+      "isSupersetOf",
+      "key_equality_for_zeros",
+      "keys",
+      "size",
+      "symmetricDifference",
+      "union",
+      "values",
+      "@@iterator",
+      "@@species"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set",
+    "support": {
+      "chrome": {
+        "added": "38",
+        "removed": null
+      },
+      "firefox": {
+        "added": "13",
+        "removed": null
+      },
+      "safari": {
+        "added": "8",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "SharedArrayBuffer",
+    "name": "SharedArrayBuffer",
+    "kind": "class",
+    "description": "The SharedArrayBuffer object is used to represent a generic raw binary data buffer, similar to the \"ArrayBuffer\" object, but in a way that they can be used to create views on shared memory. A SharedArrayBuffer is not a Transferable Object, unlike an ArrayBuffer which is transferable.",
+    "status": "standard",
+    "memberCount": 7,
+    "members": [
+      "SharedArrayBuffer",
+      "byteLength",
+      "grow",
+      "growable",
+      "maxByteLength",
+      "slice",
+      "@@species"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer",
+    "support": {
+      "chrome": {
+        "added": "68",
+        "removed": null
+      },
+      "firefox": {
+        "added": "79",
+        "removed": null
+      },
+      "safari": {
+        "added": "15.2",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "8.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "String",
+    "name": "String",
+    "kind": "class",
+    "description": "The String object is used to represent and manipulate a sequence of characters.",
+    "status": "standard",
+    "memberCount": 57,
+    "members": [
+      "String",
+      "anchor",
+      "at",
+      "big",
+      "blink",
+      "bold",
+      "charAt",
+      "charCodeAt",
+      "codePointAt",
+      "concat",
+      "endsWith",
+      "fixed",
+      "fontcolor",
+      "fontsize",
+      "fromCharCode",
+      "fromCodePoint",
+      "includes",
+      "indexOf",
+      "isWellFormed",
+      "italics",
+      "lastIndexOf",
+      "length",
+      "link",
+      "localeCompare",
+      "match",
+      "matchAll",
+      "normalize",
+      "padEnd",
+      "padStart",
+      "raw",
+      "repeat",
+      "replace",
+      "replaceAll",
+      "search",
+      "slice",
+      "small",
+      "split",
+      "startsWith",
+      "strike",
+      "sub",
+      "substr",
+      "substring",
+      "sup",
+      "toLocaleLowerCase",
+      "toLocaleUpperCase",
+      "toLowerCase",
+      "toString",
+      "toUpperCase",
+      "toWellFormed",
+      "trim",
+      "trimEnd",
+      "trimLeft",
+      "trimRight",
+      "trimStart",
+      "unicode_code_point_escapes",
+      "valueOf",
+      "@@iterator"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "SuppressedError",
+    "name": "SuppressedError",
+    "kind": "class",
+    "description": "The SuppressedError object represents an error generated while handing another error. It is generated during resource disposal using \"Statements/using\", \"using\" or \"Statements/awaitusing\", \"await using\".",
+    "status": "standard",
+    "memberCount": 3,
+    "members": [
+      "SuppressedError",
+      "error",
+      "suppressed"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-suppressederror-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SuppressedError",
+    "support": {
+      "chrome": {
+        "added": "134",
+        "removed": null
+      },
+      "firefox": {
+        "added": "141",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "24.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Symbol",
+    "name": "Symbol",
+    "kind": "class",
+    "description": "Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that's guaranteed to be unique. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object. That enables a form of weak \"encapsulation\", or a weak form of information hiding.",
+    "status": "standard",
+    "memberCount": 22,
+    "members": [
+      "Symbol",
+      "asyncDispose",
+      "asyncIterator",
+      "description",
+      "dispose",
+      "for",
+      "hasInstance",
+      "isConcatSpreadable",
+      "iterator",
+      "keyFor",
+      "match",
+      "matchAll",
+      "replace",
+      "search",
+      "species",
+      "split",
+      "toPrimitive",
+      "toString",
+      "toStringTag",
+      "unscopables",
+      "valueOf",
+      "@@toPrimitive"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+    "support": {
+      "chrome": {
+        "added": "38",
+        "removed": null
+      },
+      "firefox": {
+        "added": "36",
+        "removed": null
+      },
+      "safari": {
+        "added": "9",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "SyntaxError",
+    "name": "SyntaxError",
+    "kind": "class",
+    "description": "The SyntaxError object represents an error when trying to interpret syntactically invalid code. It is thrown when the JavaScript engine encounters tokens or token order that does not conform to the syntax of the language when parsing code.",
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "SyntaxError",
+      "serializable_object"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-syntaxerror"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SyntaxError",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal",
+    "name": "Temporal",
+    "kind": "namespace",
+    "description": "The Temporal object enables date and time management in various scenarios, including built-in time zone and calendar representation, wall-clock time conversions, arithmetics, formatting, and more. It is designed as a full replacement for the \"Date\" object.",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal.Duration",
+    "name": "Temporal.Duration",
+    "kind": "class",
+    "description": "The Temporal.Duration object represents a difference between two time points, which can be used in date/time arithmetic. It is fundamentally represented as a combination of years, months, weeks, days, hours, minutes, seconds, milliseconds, microseconds, and nanoseconds values.",
+    "status": "standard",
+    "memberCount": 26,
+    "members": [
+      "Duration",
+      "abs",
+      "add",
+      "blank",
+      "compare",
+      "days",
+      "from",
+      "hours",
+      "microseconds",
+      "milliseconds",
+      "minutes",
+      "months",
+      "nanoseconds",
+      "negated",
+      "round",
+      "seconds",
+      "sign",
+      "subtract",
+      "toJSON",
+      "toLocaleString",
+      "toString",
+      "total",
+      "valueOf",
+      "weeks",
+      "with",
+      "years"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-duration-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Duration",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal.Instant",
+    "name": "Temporal.Instant",
+    "kind": "class",
+    "description": "The Temporal.Instant object represents a unique point in time, with nanosecond precision. It is fundamentally represented as the number of nanoseconds since the Unix epoch (midnight at the beginning of January 1, 1970, UTC), without any time zone or calendar system.",
+    "status": "standard",
+    "memberCount": 18,
+    "members": [
+      "Instant",
+      "add",
+      "compare",
+      "epochMilliseconds",
+      "epochNanoseconds",
+      "equals",
+      "from",
+      "fromEpochMilliseconds",
+      "fromEpochNanoseconds",
+      "round",
+      "since",
+      "subtract",
+      "toJSON",
+      "toLocaleString",
+      "toString",
+      "toZonedDateTimeISO",
+      "until",
+      "valueOf"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-instant-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Instant",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal.Now",
+    "name": "Temporal.Now",
+    "kind": "namespace",
+    "description": "The Temporal.Now namespace object contains static methods for getting the current time in various formats.",
+    "status": "standard",
+    "memberCount": 6,
+    "members": [
+      "instant",
+      "plainDateISO",
+      "plainDateTimeISO",
+      "plainTimeISO",
+      "timeZoneId",
+      "zonedDateTimeISO"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-now-object"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Now",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal.PlainDate",
+    "name": "Temporal.PlainDate",
+    "kind": "class",
+    "description": "The Temporal.PlainDate object represents a calendar date (a date without a time or time zone); for example, an event on a calendar which happens during the whole day no matter which time zone it's happening in. It is fundamentally represented as an ISO 8601 calendar date, with year, month, and day fields, and an associated calendar system.",
+    "status": "standard",
+    "memberCount": 34,
+    "members": [
+      "PlainDate",
+      "add",
+      "calendarId",
+      "compare",
+      "day",
+      "dayOfWeek",
+      "dayOfYear",
+      "daysInMonth",
+      "daysInWeek",
+      "daysInYear",
+      "equals",
+      "era",
+      "eraYear",
+      "from",
+      "inLeapYear",
+      "month",
+      "monthCode",
+      "monthsInYear",
+      "since",
+      "subtract",
+      "toJSON",
+      "toLocaleString",
+      "toPlainDateTime",
+      "toPlainMonthDay",
+      "toPlainYearMonth",
+      "toString",
+      "toZonedDateTime",
+      "until",
+      "valueOf",
+      "weekOfYear",
+      "with",
+      "withCalendar",
+      "year",
+      "yearOfWeek"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-plaindate-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal.PlainDateTime",
+    "name": "Temporal.PlainDateTime",
+    "kind": "class",
+    "description": "The Temporal.PlainDateTime object represents a date (calendar date) and time (wall-clock time) without a time zone. It is fundamentally represented as a combination of a date (with an associated calendar system) and a time.",
+    "status": "standard",
+    "memberCount": 41,
+    "members": [
+      "PlainDateTime",
+      "add",
+      "calendarId",
+      "compare",
+      "day",
+      "dayOfWeek",
+      "dayOfYear",
+      "daysInMonth",
+      "daysInWeek",
+      "daysInYear",
+      "equals",
+      "era",
+      "eraYear",
+      "from",
+      "hour",
+      "inLeapYear",
+      "microsecond",
+      "millisecond",
+      "minute",
+      "month",
+      "monthCode",
+      "monthsInYear",
+      "nanosecond",
+      "round",
+      "second",
+      "since",
+      "subtract",
+      "toJSON",
+      "toLocaleString",
+      "toPlainDate",
+      "toPlainTime",
+      "toString",
+      "toZonedDateTime",
+      "until",
+      "valueOf",
+      "weekOfYear",
+      "with",
+      "withCalendar",
+      "withPlainTime",
+      "year",
+      "yearOfWeek"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-plaindatetime-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal.PlainMonthDay",
+    "name": "Temporal.PlainMonthDay",
+    "kind": "class",
+    "description": "The Temporal.PlainMonthDay object represents the month and day of a calendar date, without a year or time zone; for example, an event on a calendar that recurs every year and happens during the whole day. It is fundamentally represented as an ISO 8601 calendar date, with year, month, and day fields, and an associated calendar system. The year is used to disambiguate the month-day in non-ISO calendar systems.",
+    "status": "standard",
+    "memberCount": 12,
+    "members": [
+      "PlainMonthDay",
+      "calendarId",
+      "day",
+      "equals",
+      "from",
+      "monthCode",
+      "toJSON",
+      "toLocaleString",
+      "toPlainDate",
+      "toString",
+      "valueOf",
+      "with"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-plainmonthday-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainMonthDay",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal.PlainTime",
+    "name": "Temporal.PlainTime",
+    "kind": "class",
+    "description": "The Temporal.PlainTime object represents a time without a date or time zone; for example, a recurring event that happens at the same time every day. It is fundamentally represented as a combination of hour, minute, second, millisecond, microsecond, and nanosecond values.",
+    "status": "standard",
+    "memberCount": 20,
+    "members": [
+      "PlainTime",
+      "add",
+      "compare",
+      "equals",
+      "from",
+      "hour",
+      "microsecond",
+      "millisecond",
+      "minute",
+      "nanosecond",
+      "round",
+      "second",
+      "since",
+      "subtract",
+      "toJSON",
+      "toLocaleString",
+      "toString",
+      "until",
+      "valueOf",
+      "with"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-plaintime-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal.PlainYearMonth",
+    "name": "Temporal.PlainYearMonth",
+    "kind": "class",
+    "description": "The Temporal.PlainYearMonth object represents the year and month of a calendar date, without a day or time zone; for example, an event on a calendar that happens during the whole month. It is fundamentally represented as an ISO 8601 calendar date, with year, month, and day fields, and an associated calendar system. The day is used to disambiguate the year-month in non-ISO calendar systems.",
+    "status": "standard",
+    "memberCount": 24,
+    "members": [
+      "PlainYearMonth",
+      "add",
+      "calendarId",
+      "compare",
+      "daysInMonth",
+      "daysInYear",
+      "equals",
+      "era",
+      "eraYear",
+      "from",
+      "inLeapYear",
+      "month",
+      "monthCode",
+      "monthsInYear",
+      "since",
+      "subtract",
+      "toJSON",
+      "toLocaleString",
+      "toPlainDate",
+      "toString",
+      "until",
+      "valueOf",
+      "with",
+      "year"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-plainyearmonth-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainYearMonth",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Temporal.ZonedDateTime",
+    "name": "Temporal.ZonedDateTime",
+    "kind": "class",
+    "description": "The Temporal.ZonedDateTime object represents a date and time with a time zone. It is fundamentally represented as a combination of an instant, a time zone, and a calendar system.",
+    "status": "standard",
+    "memberCount": 51,
+    "members": [
+      "ZonedDateTime",
+      "add",
+      "calendarId",
+      "compare",
+      "day",
+      "dayOfWeek",
+      "dayOfYear",
+      "daysInMonth",
+      "daysInWeek",
+      "daysInYear",
+      "epochMilliseconds",
+      "epochNanoseconds",
+      "equals",
+      "era",
+      "eraYear",
+      "from",
+      "getTimeZoneTransition",
+      "hour",
+      "hoursInDay",
+      "inLeapYear",
+      "microsecond",
+      "millisecond",
+      "minute",
+      "month",
+      "monthCode",
+      "monthsInYear",
+      "nanosecond",
+      "offset",
+      "offsetNanoseconds",
+      "round",
+      "second",
+      "since",
+      "startOfDay",
+      "subtract",
+      "timeZoneId",
+      "toInstant",
+      "toJSON",
+      "toLocaleString",
+      "toPlainDate",
+      "toPlainDateTime",
+      "toPlainTime",
+      "toString",
+      "until",
+      "valueOf",
+      "weekOfYear",
+      "with",
+      "withCalendar",
+      "withPlainTime",
+      "withTimeZone",
+      "year",
+      "yearOfWeek"
+    ],
+    "specUrl": [
+      "https://tc39.es/proposal-temporal/#sec-temporal-zoneddatetime-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/ZonedDateTime",
+    "support": {
+      "chrome": {
+        "added": "144",
+        "removed": null
+      },
+      "firefox": {
+        "added": "139",
+        "removed": null
+      },
+      "safari": {
+        "added": "preview",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "26.0.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "TypedArray",
+    "name": "TypedArray",
+    "kind": "class",
+    "description": "A TypedArray object describes an array-like view of an underlying binary data buffer. There is no global property named TypedArray, nor is there a directly visible TypedArray constructor. Instead, there are a number of different global properties, whose values are typed array constructors for specific element types, listed below. On the following pages you will find common properties and methods that can be used with any typed array containing elements of any type.",
+    "status": "standard",
+    "memberCount": 45,
+    "members": [
+      "BYTES_PER_ELEMENT",
+      "at",
+      "buffer",
+      "byteLength",
+      "byteOffset",
+      "constructor_without_parameters",
+      "copyWithin",
+      "entries",
+      "every",
+      "fill",
+      "filter",
+      "find",
+      "findIndex",
+      "findLast",
+      "findLastIndex",
+      "forEach",
+      "from",
+      "includes",
+      "index_properties_not_consulting_prototype",
+      "indexOf",
+      "iterable_in_constructor",
+      "join",
+      "keys",
+      "lastIndexOf",
+      "length",
+      "map",
+      "name",
+      "named_properties",
+      "of",
+      "reduce",
+      "reduceRight",
+      "reverse",
+      "set",
+      "slice",
+      "some",
+      "sort",
+      "subarray",
+      "toLocaleString",
+      "toReversed",
+      "toSorted",
+      "toString",
+      "values",
+      "with",
+      "@@iterator",
+      "@@species"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "TypeError",
+    "name": "TypeError",
+    "kind": "class",
+    "description": "The TypeError object represents an error when an operation could not be performed, typically (but not exclusively) when a value is not of the expected type.",
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "TypeError",
+      "serializable_object"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-typeerror"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypeError",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Uint16Array",
+    "name": "Uint16Array",
+    "kind": "class",
+    "description": "The Uint16Array typed array represents an array of 16-bit unsigned integers in the platform byte order. If control over byte order is needed, use \"DataView\" instead. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "Uint16Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Uint32Array",
+    "name": "Uint32Array",
+    "kind": "class",
+    "description": "The Uint32Array typed array represents an array of 32-bit unsigned integers in the platform byte order. If control over byte order is needed, use \"DataView\" instead. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "Uint32Array"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Uint8Array",
+    "name": "Uint8Array",
+    "kind": "class",
+    "description": "The Uint8Array typed array represents an array of 8-bit unsigned integers. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 7,
+    "members": [
+      "Uint8Array",
+      "fromBase64",
+      "fromHex",
+      "setFromBase64",
+      "setFromHex",
+      "toBase64",
+      "toHex"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8Array",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "Uint8ClampedArray",
+    "name": "Uint8ClampedArray",
+    "kind": "class",
+    "description": "The Uint8ClampedArray typed array represents an array of 8-bit unsigned integers clamped to 0–255. The contents are initialized to 0 unless initialization data is explicitly provided. Once established, you can reference elements in the array using the object's methods, or using standard array index syntax (that is, using bracket notation).",
+    "status": "standard",
+    "memberCount": 1,
+    "members": [
+      "Uint8ClampedArray"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Uint8ClampedArray",
+    "support": {
+      "chrome": {
+        "added": "7",
+        "removed": null
+      },
+      "firefox": {
+        "added": "4",
+        "removed": null
+      },
+      "safari": {
+        "added": "5.1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "undefined",
+    "name": "undefined",
+    "kind": "global-property",
+    "description": "The undefined global property represents the primitive value undefined. It is one of JavaScript's \"Primitive\", \"primitive types\".",
+    "status": "standard",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/global-object.html#sec-undefined"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "unescape",
+    "name": "unescape",
+    "kind": "function",
+    "description": "> [!NOTE] > unescape() is a non-standard function implemented by browsers and was only standardized for cross-engine compatibility. It is not required to be implemented by all JavaScript engines and may not work everywhere. Use \"decodeURIComponent()\" or \"decodeURI()\" if possible.",
+    "status": "deprecated",
+    "memberCount": 0,
+    "members": [],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/additional-ecmascript-features-for-web-browsers.html#sec-unescape-string"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/unescape",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "URIError",
+    "name": "URIError",
+    "kind": "class",
+    "description": "The URIError object represents an error when a global URI handling function was used in a wrong way.",
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "URIError",
+      "serializable_object"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-native-error-types-used-in-this-standard-urierror"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/URIError",
+    "support": {
+      "chrome": {
+        "added": "1",
+        "removed": null
+      },
+      "firefox": {
+        "added": "1",
+        "removed": null
+      },
+      "safari": {
+        "added": "1",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.10.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "WeakMap",
+    "name": "WeakMap",
+    "kind": "class",
+    "description": "A WeakMap is a collection of key/value pairs whose keys must be objects or non-registered symbols, with values of any arbitrary JavaScript type, and which does not create strong references to its keys. That is, an object's presence as a key in a WeakMap does not prevent the object from being garbage collected. Once an object used as a key has been collected, its corresponding values in any WeakMap become candidates for garbage collection as well — as long as they aren't strongly referred to elsewhere. The only primitive type that can be used as a WeakMap key is symbol — more specifically, non-registered symbols — because non-registered symbols are guaranteed to be unique and cannot be re-created.",
+    "status": "standard",
+    "memberCount": 8,
+    "members": [
+      "WeakMap",
+      "delete",
+      "get",
+      "getOrInsert",
+      "getOrInsertComputed",
+      "has",
+      "set",
+      "symbol_as_keys"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakmap-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakMap",
+    "support": {
+      "chrome": {
+        "added": "36",
+        "removed": null
+      },
+      "firefox": {
+        "added": "6",
+        "removed": null
+      },
+      "safari": {
+        "added": "8",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "WeakRef",
+    "name": "WeakRef",
+    "kind": "class",
+    "description": "A WeakRef object lets you hold a weak reference to another object, without preventing that object from getting garbage-collected.",
+    "status": "standard",
+    "memberCount": 2,
+    "members": [
+      "WeakRef",
+      "deref"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/managing-memory.html#sec-weak-ref-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakRef",
+    "support": {
+      "chrome": {
+        "added": "84",
+        "removed": null
+      },
+      "firefox": {
+        "added": "79",
+        "removed": null
+      },
+      "safari": {
+        "added": "14.1",
+        "removed": null
+      },
+      "edge": {
+        "added": null,
+        "removed": null
+      },
+      "nodejs": {
+        "added": "14.6.0",
+        "removed": null
+      }
+    }
+  },
+  {
+    "id": "WeakSet",
+    "name": "WeakSet",
+    "kind": "class",
+    "description": "A WeakSet is a collection of garbage-collectable values, including objects and non-registered symbols. A value in the WeakSet may only occur once. It is unique in the WeakSet's collection.",
+    "status": "standard",
+    "memberCount": 5,
+    "members": [
+      "WeakSet",
+      "add",
+      "delete",
+      "has",
+      "symbol_as_keys"
+    ],
+    "specUrl": [
+      "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-objects"
+    ],
+    "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+    "support": {
+      "chrome": {
+        "added": "36",
+        "removed": null
+      },
+      "firefox": {
+        "added": "34",
+        "removed": null
+      },
+      "safari": {
+        "added": "9",
+        "removed": null
+      },
+      "edge": {
+        "added": "12",
+        "removed": null
+      },
+      "nodejs": {
+        "added": "0.12.0",
+        "removed": null
+      }
+    }
   }
 ]

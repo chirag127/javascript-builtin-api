@@ -1,0 +1,35 @@
+{
+  "id": "isFinite",
+  "name": "isFinite",
+  "kind": "function",
+  "description": "The isFinite() function determines whether a value is finite, first converting the value to a number if necessary. A finite number is one that's not \"NaN\" or ±\"Infinity\". Because coercion inside the isFinite() function can be surprising, you may prefer to use \"Number.isFinite()\".",
+  "status": "standard",
+  "memberCount": 0,
+  "members": [],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-isfinite-number"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/isFinite",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "id": "AsyncFunction",
+  "name": "AsyncFunction",
+  "kind": "class",
+  "description": "The AsyncFunction object provides methods for async functions. In JavaScript, every async function is actually an AsyncFunction object.",
+  "status": "standard",
+  "memberCount": 1,
+  "members": [
+    "AsyncFunction"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-async-function-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncFunction",
+  "support": {
+    "chrome": {
+      "added": "55",
+      "removed": null
+    },
+    "firefox": {
+      "added": "52",
+      "removed": null
+    },
+    "safari": {
+      "added": "10.1",
+      "removed": null
+    },
+    "edge": {
+      "added": "15",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "7.6.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "id": "Temporal.PlainDateTime",
+  "name": "Temporal.PlainDateTime",
+  "kind": "class",
+  "description": "The Temporal.PlainDateTime object represents a date (calendar date) and time (wall-clock time) without a time zone. It is fundamentally represented as a combination of a date (with an associated calendar system) and a time.",
+  "status": "standard",
+  "memberCount": 41,
+  "members": [
+    "PlainDateTime",
+    "add",
+    "calendarId",
+    "compare",
+    "day",
+    "dayOfWeek",
+    "dayOfYear",
+    "daysInMonth",
+    "daysInWeek",
+    "daysInYear",
+    "equals",
+    "era",
+    "eraYear",
+    "from",
+    "hour",
+    "inLeapYear",
+    "microsecond",
+    "millisecond",
+    "minute",
+    "month",
+    "monthCode",
+    "monthsInYear",
+    "nanosecond",
+    "round",
+    "second",
+    "since",
+    "subtract",
+    "toJSON",
+    "toLocaleString",
+    "toPlainDate",
+    "toPlainTime",
+    "toString",
+    "toZonedDateTime",
+    "until",
+    "valueOf",
+    "weekOfYear",
+    "with",
+    "withCalendar",
+    "withPlainTime",
+    "year",
+    "yearOfWeek"
+  ],
+  "specUrl": [
+    "https://tc39.es/proposal-temporal/#sec-temporal-plaindatetime-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDateTime",
+  "support": {
+    "chrome": {
+      "added": "144",
+      "removed": null
+    },
+    "firefox": {
+      "added": "139",
+      "removed": null
+    },
+    "safari": {
+      "added": "preview",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "26.0.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "id": "Date",
+  "name": "Date",
+  "kind": "class",
+  "description": "JavaScript Date objects represent a single moment in time in a platform-independent format. Date objects encapsulate an integral number that represents milliseconds since the midnight at the beginning of January 1, 1970, UTC (the epoch).",
+  "status": "standard",
+  "memberCount": 52,
+  "members": [
+    "Date",
+    "UTC",
+    "getDate",
+    "getDay",
+    "getFullYear",
+    "getHours",
+    "getMilliseconds",
+    "getMinutes",
+    "getMonth",
+    "getSeconds",
+    "getTime",
+    "getTimezoneOffset",
+    "getUTCDate",
+    "getUTCDay",
+    "getUTCFullYear",
+    "getUTCHours",
+    "getUTCMilliseconds",
+    "getUTCMinutes",
+    "getUTCMonth",
+    "getUTCSeconds",
+    "getYear",
+    "now",
+    "parse",
+    "setDate",
+    "setFullYear",
+    "setHours",
+    "setMilliseconds",
+    "setMinutes",
+    "setMonth",
+    "setSeconds",
+    "setTime",
+    "setUTCDate",
+    "setUTCFullYear",
+    "setUTCHours",
+    "setUTCMilliseconds",
+    "setUTCMinutes",
+    "setUTCMonth",
+    "setUTCSeconds",
+    "setYear",
+    "toDateString",
+    "toGMTString",
+    "toISOString",
+    "toJSON",
+    "toLocaleDateString",
+    "toLocaleString",
+    "toLocaleTimeString",
+    "toString",
+    "toTemporalInstant",
+    "toTimeString",
+    "toUTCString",
+    "valueOf",
+    "@@toPrimitive"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/numbers-and-dates.html#sec-date-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Date",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

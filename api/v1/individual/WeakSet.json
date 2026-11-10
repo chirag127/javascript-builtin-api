@@ -1,0 +1,41 @@
+{
+  "id": "WeakSet",
+  "name": "WeakSet",
+  "kind": "class",
+  "description": "A WeakSet is a collection of garbage-collectable values, including objects and non-registered symbols. A value in the WeakSet may only occur once. It is unique in the WeakSet's collection.",
+  "status": "standard",
+  "memberCount": 5,
+  "members": [
+    "WeakSet",
+    "add",
+    "delete",
+    "has",
+    "symbol_as_keys"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-weakset-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/WeakSet",
+  "support": {
+    "chrome": {
+      "added": "36",
+      "removed": null
+    },
+    "firefox": {
+      "added": "34",
+      "removed": null
+    },
+    "safari": {
+      "added": "9",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.12.0",
+      "removed": null
+    }
+  }
+}

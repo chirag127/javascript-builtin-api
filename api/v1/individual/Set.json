@@ -1,0 +1,56 @@
+{
+  "id": "Set",
+  "name": "Set",
+  "kind": "class",
+  "description": "The Set object lets you store unique values of any type, whether \"Primitive\", \"primitive values\" or object references.",
+  "status": "standard",
+  "memberCount": 20,
+  "members": [
+    "Set",
+    "add",
+    "clear",
+    "delete",
+    "difference",
+    "entries",
+    "forEach",
+    "has",
+    "intersection",
+    "isDisjointFrom",
+    "isSubsetOf",
+    "isSupersetOf",
+    "key_equality_for_zeros",
+    "keys",
+    "size",
+    "symmetricDifference",
+    "union",
+    "values",
+    "@@iterator",
+    "@@species"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/keyed-collections.html#sec-set-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Set",
+  "support": {
+    "chrome": {
+      "added": "38",
+      "removed": null
+    },
+    "firefox": {
+      "added": "13",
+      "removed": null
+    },
+    "safari": {
+      "added": "8",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.12.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "id": "SharedArrayBuffer",
+  "name": "SharedArrayBuffer",
+  "kind": "class",
+  "description": "The SharedArrayBuffer object is used to represent a generic raw binary data buffer, similar to the \"ArrayBuffer\" object, but in a way that they can be used to create views on shared memory. A SharedArrayBuffer is not a Transferable Object, unlike an ArrayBuffer which is transferable.",
+  "status": "standard",
+  "memberCount": 7,
+  "members": [
+    "SharedArrayBuffer",
+    "byteLength",
+    "grow",
+    "growable",
+    "maxByteLength",
+    "slice",
+    "@@species"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-sharedarraybuffer-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer",
+  "support": {
+    "chrome": {
+      "added": "68",
+      "removed": null
+    },
+    "firefox": {
+      "added": "79",
+      "removed": null
+    },
+    "safari": {
+      "added": "15.2",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "8.10.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "id": "isNaN",
+  "name": "isNaN",
+  "kind": "function",
+  "description": "The isNaN() function determines whether a value is \"NaN\", first converting the value to a number if necessary. Because coercion inside the isNaN() function can be surprising, you may prefer to use \"Number.isNaN()\".",
+  "status": "standard",
+  "memberCount": 0,
+  "members": [],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-isnan-number"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/isNaN",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

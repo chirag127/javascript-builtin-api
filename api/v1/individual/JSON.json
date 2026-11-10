@@ -1,0 +1,41 @@
+{
+  "id": "JSON",
+  "name": "JSON",
+  "kind": "namespace",
+  "description": "The JSON namespace object contains static methods for parsing values from and converting values to JavaScript Object Notation (\"JSON\").",
+  "status": "standard",
+  "memberCount": 5,
+  "members": [
+    "isRawJSON",
+    "json_superset",
+    "parse",
+    "rawJSON",
+    "stringify"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-json-object"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/JSON",
+  "support": {
+    "chrome": {
+      "added": "3",
+      "removed": null
+    },
+    "firefox": {
+      "added": "3.5",
+      "removed": null
+    },
+    "safari": {
+      "added": "4",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

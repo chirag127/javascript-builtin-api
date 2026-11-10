@@ -1,0 +1,40 @@
+{
+  "id": "Intl.Segmenter",
+  "name": "Intl.Segmenter",
+  "kind": "class",
+  "description": "The Intl.Segmenter object enables locale-sensitive text segmentation, enabling you to get meaningful items (graphemes, words or sentences) from a string.",
+  "status": "standard",
+  "memberCount": 4,
+  "members": [
+    "Segmenter",
+    "resolvedOptions",
+    "segment",
+    "supportedLocalesOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma402/#segmenter-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/Segmenter",
+  "support": {
+    "chrome": {
+      "added": "87",
+      "removed": null
+    },
+    "firefox": {
+      "added": "125",
+      "removed": null
+    },
+    "safari": {
+      "added": "14.1",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "16.0.0",
+      "removed": null
+    }
+  }
+}

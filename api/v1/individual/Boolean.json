@@ -1,0 +1,39 @@
+{
+  "id": "Boolean",
+  "name": "Boolean",
+  "kind": "class",
+  "description": "Boolean values can be one of two values: true or false, representing the truth value of a logical proposition.",
+  "status": "standard",
+  "memberCount": 3,
+  "members": [
+    "Boolean",
+    "toString",
+    "valueOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-boolean-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "Atomics",
+  "name": "Atomics",
+  "kind": "namespace",
+  "description": "The Atomics namespace object contains static methods for carrying out atomic operations. They are used with \"SharedArrayBuffer\" and \"ArrayBuffer\" objects.",
+  "status": "standard",
+  "memberCount": 15,
+  "members": [
+    "Atomic_operations_on_non_shared_buffers",
+    "add",
+    "and",
+    "compareExchange",
+    "exchange",
+    "isLockFree",
+    "load",
+    "notify",
+    "or",
+    "pause",
+    "store",
+    "sub",
+    "wait",
+    "waitAsync",
+    "xor"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/structured-data.html#sec-atomics-object"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Atomics",
+  "support": {
+    "chrome": {
+      "added": "68",
+      "removed": null
+    },
+    "firefox": {
+      "added": "78",
+      "removed": null
+    },
+    "safari": {
+      "added": "15.2",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "8.10.0",
+      "removed": null
+    }
+  }
+}

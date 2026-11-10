@@ -1,0 +1,70 @@
+{
+  "id": "Temporal.PlainDate",
+  "name": "Temporal.PlainDate",
+  "kind": "class",
+  "description": "The Temporal.PlainDate object represents a calendar date (a date without a time or time zone); for example, an event on a calendar which happens during the whole day no matter which time zone it's happening in. It is fundamentally represented as an ISO 8601 calendar date, with year, month, and day fields, and an associated calendar system.",
+  "status": "standard",
+  "memberCount": 34,
+  "members": [
+    "PlainDate",
+    "add",
+    "calendarId",
+    "compare",
+    "day",
+    "dayOfWeek",
+    "dayOfYear",
+    "daysInMonth",
+    "daysInWeek",
+    "daysInYear",
+    "equals",
+    "era",
+    "eraYear",
+    "from",
+    "inLeapYear",
+    "month",
+    "monthCode",
+    "monthsInYear",
+    "since",
+    "subtract",
+    "toJSON",
+    "toLocaleString",
+    "toPlainDateTime",
+    "toPlainMonthDay",
+    "toPlainYearMonth",
+    "toString",
+    "toZonedDateTime",
+    "until",
+    "valueOf",
+    "weekOfYear",
+    "with",
+    "withCalendar",
+    "year",
+    "yearOfWeek"
+  ],
+  "specUrl": [
+    "https://tc39.es/proposal-temporal/#sec-temporal-plaindate-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainDate",
+  "support": {
+    "chrome": {
+      "added": "144",
+      "removed": null
+    },
+    "firefox": {
+      "added": "139",
+      "removed": null
+    },
+    "safari": {
+      "added": "preview",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "26.0.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "id": "Intl.DisplayNames",
+  "name": "Intl.DisplayNames",
+  "kind": "class",
+  "description": "The Intl.DisplayNames object enables the consistent translation of language, region and script display names.",
+  "status": "standard",
+  "memberCount": 4,
+  "members": [
+    "DisplayNames",
+    "of",
+    "resolvedOptions",
+    "supportedLocalesOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma402/#intl-displaynames-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/DisplayNames",
+  "support": {
+    "chrome": {
+      "added": "81",
+      "removed": null
+    },
+    "firefox": {
+      "added": "86",
+      "removed": null
+    },
+    "safari": {
+      "added": "14.1",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "14.0.0",
+      "removed": null
+    }
+  }
+}

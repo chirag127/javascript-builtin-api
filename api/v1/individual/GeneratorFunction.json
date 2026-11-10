@@ -1,0 +1,37 @@
+{
+  "id": "GeneratorFunction",
+  "name": "GeneratorFunction",
+  "kind": "class",
+  "description": "The GeneratorFunction object provides methods for generator functions. In JavaScript, every generator function is actually a GeneratorFunction object.",
+  "status": "standard",
+  "memberCount": 1,
+  "members": [
+    "GeneratorFunction"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-generatorfunction-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/GeneratorFunction",
+  "support": {
+    "chrome": {
+      "added": "39",
+      "removed": null
+    },
+    "firefox": {
+      "added": "26",
+      "removed": null
+    },
+    "safari": {
+      "added": "10",
+      "removed": null
+    },
+    "edge": {
+      "added": "13",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "4.0.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "AggregateError",
+  "name": "AggregateError",
+  "kind": "class",
+  "description": "The AggregateError object represents an error when several errors need to be wrapped in a single error. It is thrown when multiple errors need to be reported by an operation, for example by \"Promise.any()\", when all promises passed to it reject.",
+  "status": "standard",
+  "memberCount": 3,
+  "members": [
+    "AggregateError",
+    "errors",
+    "serializable_object"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-aggregate-error-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AggregateError",
+  "support": {
+    "chrome": {
+      "added": "85",
+      "removed": null
+    },
+    "firefox": {
+      "added": "79",
+      "removed": null
+    },
+    "safari": {
+      "added": "14",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "15.0.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "id": "AsyncGenerator",
+  "name": "AsyncGenerator",
+  "kind": "class",
+  "description": "The AsyncGenerator object is returned by an \"Statements/asyncfunction\", \"async generator function\", \"\", 1 and it conforms to both the async iterable protocol and the async iterator protocol.",
+  "status": "standard",
+  "memberCount": 3,
+  "members": [
+    "next",
+    "return",
+    "throw"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asyncgenerator-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncGenerator",
+  "support": {
+    "chrome": {
+      "added": "63",
+      "removed": null
+    },
+    "firefox": {
+      "added": "55",
+      "removed": null
+    },
+    "safari": {
+      "added": "12",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "10.0.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "id": "Temporal.Now",
+  "name": "Temporal.Now",
+  "kind": "namespace",
+  "description": "The Temporal.Now namespace object contains static methods for getting the current time in various formats.",
+  "status": "standard",
+  "memberCount": 6,
+  "members": [
+    "instant",
+    "plainDateISO",
+    "plainDateTimeISO",
+    "plainTimeISO",
+    "timeZoneId",
+    "zonedDateTimeISO"
+  ],
+  "specUrl": [
+    "https://tc39.es/proposal-temporal/#sec-temporal-now-object"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Now",
+  "support": {
+    "chrome": {
+      "added": "144",
+      "removed": null
+    },
+    "firefox": {
+      "added": "139",
+      "removed": null
+    },
+    "safari": {
+      "added": "preview",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "26.0.0",
+      "removed": null
+    }
+  }
+}

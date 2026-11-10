@@ -1,0 +1,41 @@
+{
+  "id": "Intl.PluralRules",
+  "name": "Intl.PluralRules",
+  "kind": "class",
+  "description": "The Intl.PluralRules object enables plural-sensitive formatting and plural-related language rules.",
+  "status": "standard",
+  "memberCount": 5,
+  "members": [
+    "PluralRules",
+    "resolvedOptions",
+    "select",
+    "selectRange",
+    "supportedLocalesOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma402/#pluralrules-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/PluralRules",
+  "support": {
+    "chrome": {
+      "added": "63",
+      "removed": null
+    },
+    "firefox": {
+      "added": "58",
+      "removed": null
+    },
+    "safari": {
+      "added": "13",
+      "removed": null
+    },
+    "edge": {
+      "added": "18",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "10.0.0",
+      "removed": null
+    }
+  }
+}

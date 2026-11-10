@@ -1,0 +1,58 @@
+{
+  "id": "Symbol",
+  "name": "Symbol",
+  "kind": "class",
+  "description": "Symbol is a built-in object whose constructor returns a symbol primitive — also called a Symbol value or just a Symbol — that's guaranteed to be unique. Symbols are often used to add unique property keys to an object that won't collide with keys any other code might add to the object, and which are hidden from any mechanisms other code will typically use to access the object. That enables a form of weak \"encapsulation\", or a weak form of information hiding.",
+  "status": "standard",
+  "memberCount": 22,
+  "members": [
+    "Symbol",
+    "asyncDispose",
+    "asyncIterator",
+    "description",
+    "dispose",
+    "for",
+    "hasInstance",
+    "isConcatSpreadable",
+    "iterator",
+    "keyFor",
+    "match",
+    "matchAll",
+    "replace",
+    "search",
+    "species",
+    "split",
+    "toPrimitive",
+    "toString",
+    "toStringTag",
+    "unscopables",
+    "valueOf",
+    "@@toPrimitive"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-symbol-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Symbol",
+  "support": {
+    "chrome": {
+      "added": "38",
+      "removed": null
+    },
+    "firefox": {
+      "added": "36",
+      "removed": null
+    },
+    "safari": {
+      "added": "9",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.12.0",
+      "removed": null
+    }
+  }
+}

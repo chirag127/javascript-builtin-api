@@ -1,0 +1,58 @@
+{
+  "id": "Iterator",
+  "name": "Iterator",
+  "kind": "class",
+  "description": "An Iterator object is an object that conforms to the iterator protocol by providing a next() method that returns an iterator result object. All built-in iterators inherit from the Iterator class. The Iterator class provides a [Symbol.iterator](/en-US/docs/Web/JavaScript/Reference/GlobalObjects/Iterator/Symbol.iterator) method that returns the iterator object itself, making the iterator also iterable. It also provides some helper methods for working with iterators.",
+  "status": "standard",
+  "memberCount": 22,
+  "members": [
+    "Iterator",
+    "chunks",
+    "concat",
+    "drop",
+    "every",
+    "filter",
+    "find",
+    "flatMap",
+    "forEach",
+    "from",
+    "includes",
+    "join",
+    "map",
+    "reduce",
+    "some",
+    "take",
+    "toArray",
+    "windows",
+    "zip",
+    "zipKeyed",
+    "@@dispose",
+    "@@iterator"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-iterator-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Iterator",
+  "support": {
+    "chrome": {
+      "added": "38",
+      "removed": null
+    },
+    "firefox": {
+      "added": "17",
+      "removed": null
+    },
+    "safari": {
+      "added": "10",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.12.0",
+      "removed": null
+    }
+  }
+}

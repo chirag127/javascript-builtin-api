@@ -1,0 +1,38 @@
+{
+  "id": "AsyncIterator",
+  "name": "AsyncIterator",
+  "kind": "class",
+  "description": "An AsyncIterator object is an object that conforms to the async iterator protocol by providing a next() method that returns a promise fulfilling to an iterator result object. The AsyncIterator.prototype object is a hidden global object that all built-in async iterators inherit from. It provides a [Symbol.asyncIterator](/en-US/docs/Web/JavaScript/Reference/GlobalObjects/AsyncIterator/Symbol.asyncIterator) method that returns the async iterator object itself, making the async iterator also async iterable.",
+  "status": "standard",
+  "memberCount": 2,
+  "members": [
+    "@@asyncDispose",
+    "@@asyncIterator"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/control-abstraction-objects.html#sec-asynciteratorprototype"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/AsyncIterator",
+  "support": {
+    "chrome": {
+      "added": "63",
+      "removed": null
+    },
+    "firefox": {
+      "added": "57",
+      "removed": null
+    },
+    "safari": {
+      "added": "11.1",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "10.0.0",
+      "removed": null
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "Error",
+  "name": "Error",
+  "kind": "class",
+  "description": "Error objects are thrown when runtime errors occur. The Error object can also be used as a base object for user-defined exceptions. See below for standard built-in error types.",
+  "status": "standard",
+  "memberCount": 13,
+  "members": [
+    "Error",
+    "captureStackTrace",
+    "cause",
+    "columnNumber",
+    "fileName",
+    "isError",
+    "lineNumber",
+    "message",
+    "name",
+    "serializable_object",
+    "stack",
+    "stackTraceLimit",
+    "toString"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/fundamental-objects.html#sec-error-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

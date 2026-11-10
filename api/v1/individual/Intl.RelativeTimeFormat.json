@@ -1,0 +1,41 @@
+{
+  "id": "Intl.RelativeTimeFormat",
+  "name": "Intl.RelativeTimeFormat",
+  "kind": "class",
+  "description": "The Intl.RelativeTimeFormat object enables language-sensitive relative time formatting.",
+  "status": "standard",
+  "memberCount": 5,
+  "members": [
+    "RelativeTimeFormat",
+    "format",
+    "formatToParts",
+    "resolvedOptions",
+    "supportedLocalesOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma402/#relativetimeformat-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Intl/RelativeTimeFormat",
+  "support": {
+    "chrome": {
+      "added": "71",
+      "removed": null
+    },
+    "firefox": {
+      "added": "65",
+      "removed": null
+    },
+    "safari": {
+      "added": "14",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "12.0.0",
+      "removed": null
+    }
+  }
+}

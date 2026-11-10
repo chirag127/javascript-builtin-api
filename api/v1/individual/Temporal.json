@@ -1,0 +1,35 @@
+{
+  "id": "Temporal",
+  "name": "Temporal",
+  "kind": "namespace",
+  "description": "The Temporal object enables date and time management in various scenarios, including built-in time zone and calendar representation, wall-clock time conversions, arithmetics, formatting, and more. It is designed as a full replacement for the \"Date\" object.",
+  "status": "standard",
+  "memberCount": 0,
+  "members": [],
+  "specUrl": [
+    "https://tc39.es/proposal-temporal/#sec-temporal-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal",
+  "support": {
+    "chrome": {
+      "added": "144",
+      "removed": null
+    },
+    "firefox": {
+      "added": "139",
+      "removed": null
+    },
+    "safari": {
+      "added": "preview",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "26.0.0",
+      "removed": null
+    }
+  }
+}

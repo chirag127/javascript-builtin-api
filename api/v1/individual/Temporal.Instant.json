@@ -1,0 +1,54 @@
+{
+  "id": "Temporal.Instant",
+  "name": "Temporal.Instant",
+  "kind": "class",
+  "description": "The Temporal.Instant object represents a unique point in time, with nanosecond precision. It is fundamentally represented as the number of nanoseconds since the Unix epoch (midnight at the beginning of January 1, 1970, UTC), without any time zone or calendar system.",
+  "status": "standard",
+  "memberCount": 18,
+  "members": [
+    "Instant",
+    "add",
+    "compare",
+    "epochMilliseconds",
+    "epochNanoseconds",
+    "equals",
+    "from",
+    "fromEpochMilliseconds",
+    "fromEpochNanoseconds",
+    "round",
+    "since",
+    "subtract",
+    "toJSON",
+    "toLocaleString",
+    "toString",
+    "toZonedDateTimeISO",
+    "until",
+    "valueOf"
+  ],
+  "specUrl": [
+    "https://tc39.es/proposal-temporal/#sec-temporal-instant-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/Instant",
+  "support": {
+    "chrome": {
+      "added": "144",
+      "removed": null
+    },
+    "firefox": {
+      "added": "139",
+      "removed": null
+    },
+    "safari": {
+      "added": "preview",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "26.0.0",
+      "removed": null
+    }
+  }
+}

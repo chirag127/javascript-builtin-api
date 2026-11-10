@@ -1,0 +1,35 @@
+{
+  "id": "Infinity",
+  "name": "Infinity",
+  "kind": "global-property",
+  "description": "The Infinity global property is a numeric value representing infinity.",
+  "status": "standard",
+  "memberCount": 0,
+  "members": [],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/global-object.html#sec-value-properties-of-the-global-object-infinity"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Infinity",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

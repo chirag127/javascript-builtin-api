@@ -1,0 +1,93 @@
+{
+  "id": "String",
+  "name": "String",
+  "kind": "class",
+  "description": "The String object is used to represent and manipulate a sequence of characters.",
+  "status": "standard",
+  "memberCount": 57,
+  "members": [
+    "String",
+    "anchor",
+    "at",
+    "big",
+    "blink",
+    "bold",
+    "charAt",
+    "charCodeAt",
+    "codePointAt",
+    "concat",
+    "endsWith",
+    "fixed",
+    "fontcolor",
+    "fontsize",
+    "fromCharCode",
+    "fromCodePoint",
+    "includes",
+    "indexOf",
+    "isWellFormed",
+    "italics",
+    "lastIndexOf",
+    "length",
+    "link",
+    "localeCompare",
+    "match",
+    "matchAll",
+    "normalize",
+    "padEnd",
+    "padStart",
+    "raw",
+    "repeat",
+    "replace",
+    "replaceAll",
+    "search",
+    "slice",
+    "small",
+    "split",
+    "startsWith",
+    "strike",
+    "sub",
+    "substr",
+    "substring",
+    "sup",
+    "toLocaleLowerCase",
+    "toLocaleUpperCase",
+    "toLowerCase",
+    "toString",
+    "toUpperCase",
+    "toWellFormed",
+    "trim",
+    "trimEnd",
+    "trimLeft",
+    "trimRight",
+    "trimStart",
+    "unicode_code_point_escapes",
+    "valueOf",
+    "@@iterator"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/text-processing.html#sec-string-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String",
+  "support": {
+    "chrome": {
+      "added": "1",
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": "1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

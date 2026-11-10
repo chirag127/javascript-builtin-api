@@ -1,0 +1,35 @@
+{
+  "id": "InternalError",
+  "name": "InternalError",
+  "kind": "class",
+  "description": "The InternalError object indicates an error that occurred internally in the JavaScript engine.",
+  "status": "nonstandard",
+  "memberCount": 1,
+  "members": [
+    "InternalError"
+  ],
+  "specUrl": [],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/InternalError",
+  "support": {
+    "chrome": {
+      "added": false,
+      "removed": null
+    },
+    "firefox": {
+      "added": "1",
+      "removed": null
+    },
+    "safari": {
+      "added": false,
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": false,
+      "removed": null
+    }
+  }
+}

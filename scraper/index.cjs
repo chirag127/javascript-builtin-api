@@ -1,6 +1,6 @@
 /**
  * JavaScript Built-ins Scraper
- * Source: MDN / ECMA-262
+ * Source: MDN browser-compat-data and MDN content
  * Run: node scraper/index.cjs
  */
 const fs = require('fs');
@@ -11,7 +11,7 @@ const OUTPUT_DIR = path.join(__dirname, '../api/v1');
 
 async function scrape() {
   console.log('JavaScript Built-ins Scraper');
-  console.log('Source:', 'MDN / ECMA-262');
+  console.log('Source:', "MDN browser-compat-data, MDN content");
   console.log('Note: Static reference data. Validating existing data.');
 
   const existing = JSON.parse(fs.readFileSync(path.join(OUTPUT_DIR, 'data.json'), 'utf8'));

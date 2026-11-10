@@ -1,0 +1,81 @@
+{
+  "id": "TypedArray",
+  "name": "TypedArray",
+  "kind": "class",
+  "description": "A TypedArray object describes an array-like view of an underlying binary data buffer. There is no global property named TypedArray, nor is there a directly visible TypedArray constructor. Instead, there are a number of different global properties, whose values are typed array constructors for specific element types, listed below. On the following pages you will find common properties and methods that can be used with any typed array containing elements of any type.",
+  "status": "standard",
+  "memberCount": 45,
+  "members": [
+    "BYTES_PER_ELEMENT",
+    "at",
+    "buffer",
+    "byteLength",
+    "byteOffset",
+    "constructor_without_parameters",
+    "copyWithin",
+    "entries",
+    "every",
+    "fill",
+    "filter",
+    "find",
+    "findIndex",
+    "findLast",
+    "findLastIndex",
+    "forEach",
+    "from",
+    "includes",
+    "index_properties_not_consulting_prototype",
+    "indexOf",
+    "iterable_in_constructor",
+    "join",
+    "keys",
+    "lastIndexOf",
+    "length",
+    "map",
+    "name",
+    "named_properties",
+    "of",
+    "reduce",
+    "reduceRight",
+    "reverse",
+    "set",
+    "slice",
+    "some",
+    "sort",
+    "subarray",
+    "toLocaleString",
+    "toReversed",
+    "toSorted",
+    "toString",
+    "values",
+    "with",
+    "@@iterator",
+    "@@species"
+  ],
+  "specUrl": [
+    "https://tc39.es/ecma262/multipage/indexed-collections.html#sec-typedarray-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/TypedArray",
+  "support": {
+    "chrome": {
+      "added": "7",
+      "removed": null
+    },
+    "firefox": {
+      "added": "4",
+      "removed": null
+    },
+    "safari": {
+      "added": "5.1",
+      "removed": null
+    },
+    "edge": {
+      "added": "12",
+      "removed": null
+    },
+    "nodejs": {
+      "added": "0.10.0",
+      "removed": null
+    }
+  }
+}

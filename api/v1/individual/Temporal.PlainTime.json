@@ -1,0 +1,56 @@
+{
+  "id": "Temporal.PlainTime",
+  "name": "Temporal.PlainTime",
+  "kind": "class",
+  "description": "The Temporal.PlainTime object represents a time without a date or time zone; for example, a recurring event that happens at the same time every day. It is fundamentally represented as a combination of hour, minute, second, millisecond, microsecond, and nanosecond values.",
+  "status": "standard",
+  "memberCount": 20,
+  "members": [
+    "PlainTime",
+    "add",
+    "compare",
+    "equals",
+    "from",
+    "hour",
+    "microsecond",
+    "millisecond",
+    "minute",
+    "nanosecond",
+    "round",
+    "second",
+    "since",
+    "subtract",
+    "toJSON",
+    "toLocaleString",
+    "toString",
+    "until",
+    "valueOf",
+    "with"
+  ],
+  "specUrl": [
+    "https://tc39.es/proposal-temporal/#sec-temporal-plaintime-objects"
+  ],
+  "mdnUrl": "https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Temporal/PlainTime",
+  "support": {
+    "chrome": {
+      "added": "144",
+      "removed": null
+    },
+    "firefox": {
+      "added": "139",
+      "removed": null
+    },
+    "safari": {
+      "added": "preview",
+      "removed": null
+    },
+    "edge": {
+      "added": null,
+      "removed": null
+    },
+    "nodejs": {
+      "added": "26.0.0",
+      "removed": null
+    }
+  }
+}
